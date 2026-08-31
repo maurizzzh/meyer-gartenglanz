@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projekte – Meyer Gartenglanz</title>
+<meta name="description" content="Referenzprojekte von Meyer Gartenglanz: realisierte Gartenträume im Thurgau, von der Seeoase bis zum naturnahen Familiengarten.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<style>
+  @layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}
+  ::-webkit-scrollbar{display:none;}
+</style>
+<script src="https://cdn.tailwindcss.com"></script>
+<script id="tailwind-config">
+tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surface-container-low":"#f5f3f3","surface-variant":"#e4e2e2","inverse-primary":"#a1d494","on-error":"#ffffff","secondary":"#3d6930","surface-container-lowest":"#ffffff","on-tertiary-container":"#ffaf9e","error":"#ba1a1a","on-primary":"#ffffff","on-background":"#1b1c1c","on-tertiary":"#ffffff","surface-dim":"#dbd9d9","on-secondary":"#ffffff","error-container":"#ffdad6","primary":"#154212","on-primary-container":"#9dd090","outline-variant":"#c2c9bb","tertiary-fixed":"#ffdad3","tertiary-fixed-dim":"#ffb4a5","secondary-container":"#bdf1a8","outline":"#72796e","background":"#fbf9f8","tertiary":"#6e1c0c","secondary-fixed-dim":"#a2d48f","surface-container":"#efeded","on-tertiary-fixed":"#3e0500","surface-bright":"#fbf9f8","on-secondary-fixed-variant":"#25501a","on-primary-fixed-variant":"#23501e","primary-container":"#2d5a27","on-primary-fixed":"#002201","surface-tint":"#3b6934","secondary-fixed":"#bdf1a8","primary-fixed":"#bcf0ae","inverse-on-surface":"#f2f0f0","on-secondary-container":"#426f35","surface":"#fbf9f8","on-secondary-fixed":"#022100","on-tertiary-fixed-variant":"#802918","tertiary-container":"#8d3220","primary-fixed-dim":"#a1d494","surface-container-highest":"#e4e2e2","on-surface":"#1b1c1c","surface-container-high":"#eae8e7","on-surface-variant":"#42493e","inverse-surface":"#303030"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"section-gap":"160px","unit":"8px","container-max":"1280px","margin-mobile":"24px","margin-desktop":"80px","gutter":"32px"},"fontFamily":{"headline-md":["Playfair Display"],"headline-xl":["Playfair Display"],"headline-lg":["Playfair Display"],"headline-xl-mobile":["Playfair Display"],"body-lg":["Open Sans"],"label-sm":["Open Sans"],"body-md":["Open Sans"]},"fontSize":{"headline-md":["24px",{"lineHeight":"1.4","fontWeight":"600"}],"headline-xl":["48px",{"lineHeight":"1.2","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"1.3","fontWeight":"600"}],"headline-xl-mobile":["32px",{"lineHeight":"1.2","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"1.6","fontWeight":"400"}],"label-sm":["14px",{"lineHeight":"1.2","letterSpacing":"0.05em","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"1.6","fontWeight":"400"}]}}}}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-background font-body-md text-on-background">
+
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(45,90,39,0.08)]">
+  <div class="h-24 max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <span class="material-symbols-outlined text-primary text-[32px]">nature</span>
+      <span class="font-headline-md text-headline-md text-primary hidden sm:block">Meyer Gartenglanz</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-gutter">
+      <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="index.html">Home</a>
+      <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="leistungen.html">Leistungen</a>
+      <a class="font-label-sm text-label-sm text-primary font-bold" href="projekte.html" aria-current="page">Projekte</a>
+      <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="kontakt.html">Kontakt</a>
+    </nav>
+    <div class="flex items-center gap-4">
+      <a class="hidden lg:block bg-primary text-on-primary px-8 py-3 rounded-full font-label-sm hover:scale-[1.02] transition-transform" href="kontakt.html">Offerte anfragen</a>
+      <button class="md:hidden w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center" aria-label="Menü öffnen" id="menu-toggle">
+        <span class="material-symbols-outlined text-on-surface">menu</span>
+      </button>
+    </div>
+  </div>
+  <nav id="mobile-menu" class="hidden md:hidden flex-col bg-surface border-t border-outline-variant/20 px-margin-mobile py-4 gap-4">
+    <a class="font-label-sm text-label-sm text-on-surface-variant" href="index.html">Home</a>
+    <a class="font-label-sm text-label-sm text-on-surface-variant" href="leistungen.html">Leistungen</a>
+    <a class="font-label-sm text-label-sm text-primary font-bold" href="projekte.html">Projekte</a>
+    <a class="font-label-sm text-label-sm text-on-surface-variant" href="kontakt.html">Kontakt</a>
+  </nav>
+</header>
+
+<main class="w-full pt-24">
+<div class="flex flex-col w-full">
+
+<!-- Header / Intro Section -->
+<section class="w-full bg-surface py-24 lg:py-32 relative overflow-hidden">
+  <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/5 to-transparent pointer-events-none"></div>
+  <div class="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+  <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop relative z-10 flex flex-col items-center text-center">
+    <div class="max-w-3xl">
+      <span class="inline-block text-primary font-label-sm uppercase tracking-wider mb-6 pb-1">Ausgewählte Werke</span>
+      <h1 class="font-headline-xl text-headline-xl text-on-surface mb-8">Inspiration &amp; Referenzen</h1>
+      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto leading-relaxed">
+        Entdecken Sie eine Auswahl unserer verwirklichten Gartenträume im Thurgau.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Project (Full Width Asymmetric) -->
+<section class="w-full lg:pb-48 pb-24">
+  <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop">
+    <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-32">
+      <div class="w-full lg:w-7/12 relative group cursor-pointer">
+        <div class="relative overflow-hidden aspect-[4/3] lg:aspect-[16/10]">
+          <img alt="Moderne Seeoase am Bodensee in Kreuzlingen" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPqTs1iuAf8mOIwm-YwCnXr7gpMPoGgDO4buWGXRhLlF5jou-1ZxtinnssMM-Pn2IRVFcoFdy9AnHrvSsi3ML12ejP3ItABGcTqXBGC05q04gZYdbC1nnpn5eZJH2gly1Cr53tGde1e3THf8Js2xy3ONZd-n4rg9LCXRwmdxT-VVKuHT_zb5MJkA7qE6SS59qqHSjOW6gebEIAluAMoQIoagx8hMFfB4IXbJKy0AY9tash9H4iL0YAIg">
+          <div class="absolute inset-0 bg-gradient-to-t from-on-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        </div>
+      </div>
+      <div class="w-full lg:w-5/12 flex flex-col justify-center">
+        <div class="flex items-center gap-4 mb-6">
+          <span class="text-on-surface-variant font-label-sm text-sm tracking-widest uppercase">Kreuzlingen</span>
+        </div>
+        <h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">Moderne Seeoase am Bodensee</h2>
+        <p class="font-body-md text-on-surface-variant leading-relaxed mb-8">
+          Für eine Familie in Kreuzlingen haben wir eine private Sitzplatz-Oase mit Natursteinterrasse, ruhigem
+          Wasserspiel und pflegeleichter, standortgerechter Bepflanzung geschaffen – ein Rückzugsort mit Seeblick.
+        </p>
+        <a class="inline-flex items-center gap-3 text-primary font-label-sm hover:gap-5 transition-all duration-300 w-max group uppercase tracking-widest text-xs" href="kontakt.html">
+          Ähnliches Projekt anfragen
+          <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Project Grid Section -->
+<section class="w-full bg-surface py-16 lg:py-24 border-t border-outline-variant/10">
+  <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop">
+
+    <div class="mb-16 max-w-2xl">
+      <span class="font-label-sm text-primary uppercase tracking-widest">Weitere Projekte</span>
+      <h2 class="font-headline-lg text-headline-lg text-on-surface mt-4">Vielfalt an Gärten im ganzen Thurgau</h2>
+    </div>
+
+    <!-- Bento-style Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <a href="kontakt.html" class="flex flex-col gap-4 group">
+        <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-[0_4px_30px_rgba(45,90,39,0.08)]">
+          <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.05]" alt="Natursteinterrasse in einem Garten in Frauenfeld" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf3s5eMc6400MF1E776cJ0suBVt8bg4TMy4AQ0juI2diueNlkMSr4d4w9V9vhtFYLWfrPbjOjWmLVaVMfS1PwyDWdMWQHWyV_fOROKWLSX2jQZM3jywDEvMieiqz8JP18usI5J0O10DSXyS3kW2SWaXFiezh-Vb9RVXOTzfPCevUz8BC-nflt2wIirpZrw-Hv81rycJROizrauAyroi-LFYCCzxkkAU4y_CZFBXpF3yhnIVYmghmxjHQ">
+        </div>
+        <div class="flex flex-col gap-1">
+          <span class="font-label-sm text-on-surface-variant uppercase tracking-wider text-xs">Frauenfeld</span>
+          <h3 class="font-headline-md text-on-surface text-lg">Terrasse mit Naturstein</h3>
+        </div>
+      </a>
+      <a href="kontakt.html" class="flex flex-col gap-4 group">
+        <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-[0_4px_30px_rgba(45,90,39,0.08)]">
+          <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.05]" alt="Gepflegter Rasen und geschnittene Hecke in einem Garten in Weinfelden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASr_ITyBmLKaHm39jiby--3EEvXcH4jV9KmLFYpnSruxFazEzLmOj4tPcmaTJoVm-KWo63F_BwgqeklVmp0w8SAV3bnDtrLhremrgpMr82p-iwlNygVuJ9z38tJ-pKtFHwxiWyAz6giXiM-TJVGVnOBZCSi01MQarxusESRNgpmQCvTEL2bbKmQA6_qUlMNt_4u38pPVIxbTsWmT1ssxrw0RLOVXcEictroV9J7KquD5JI5bo_4UkrnQ">
+        </div>
+        <div class="flex flex-col gap-1">
+          <span class="font-label-sm text-on-surface-variant uppercase tracking-wider text-xs">Weinfelden</span>
+          <h3 class="font-headline-md text-on-surface text-lg">Rasenpflege &amp; Heckenschnitt</h3>
+        </div>
+      </a>
+      <a href="kontakt.html" class="flex flex-col gap-4 group">
+        <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-[0_4px_30px_rgba(45,90,39,0.08)]">
+          <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.05]" alt="Neu angelegter Garten mit frischer Bepflanzung in Arbon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFg3Wv0bnLukaIFX7dh_Qh0_efH5tzUyevIAaQqAUNKvlaBRxLTyoAQ4hxRrZMeEEUnvweRwQevEFlkebgYFhz3lQZxkhPlxMFmr45T-lmhrTJQwqQiWfTXZ-QGIZbUOs8eCKg8IKz9OWSsVLmvUgy_B6IS8WB-PowO435d_fofQnXU2YT5O5u6WZ3xpXsEYAcn0UnNjC5ZOiBFEh_3fNh07DFPuK9Vjg1vuE6YjWnx1pgZmz1JrZFsw">
+        </div>
+        <div class="flex flex-col gap-1">
+          <span class="font-label-sm text-on-surface-variant uppercase tracking-wider text-xs">Arbon</span>
+          <h3 class="font-headline-md text-on-surface text-lg">Neugestaltung Familiengarten</h3>
+        </div>
+      </a>
+      <a href="kontakt.html" class="flex flex-col gap-4 group">
+        <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-[0_4px_30px_rgba(45,90,39,0.08)]">
+          <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.05]" alt="Tautropfen auf einem Farnblatt in einem naturnahen Garten in Romanshorn" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDH_rEXzKlpkSVjYxRM8NtLIrY_FoqewNE1J90A_tXUfktIXoCViiuqD6yy7l3FHJetBeGZJBARb_apfm6WYMsQunXVVn7dWbM7-8yhuAOApkTpt2o9GLZ5PTEyb3CKH9fzBXnIeP86G7K39C28ohHObw-ZmBUiy_xyovBxzEgWQIDEfomivP9aBZ6m6kPETdL1ww09i6UJhRsMHD0B78RhdzS5IelFqGbiRcG5pwb7AajLCx1aS15plA">
+        </div>
+        <div class="flex flex-col gap-1">
+          <span class="font-label-sm text-on-surface-variant uppercase tracking-wider text-xs">Romanshorn</span>
+          <h3 class="font-headline-md text-on-surface text-lg">Naturnaher Pflanzgarten</h3>
+        </div>
+      </a>
+      <a href="kontakt.html" class="flex flex-col gap-4 group">
+        <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-[0_4px_30px_rgba(45,90,39,0.08)]">
+          <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.05]" alt="Landschaftsplanung mit Skizzen für ein Gartenprojekt in Amriswil" src="https://lh3.googleusercontent.com/aida/AEtjO1UmqY_fWY7gabU5yCwx1pm68tzHRmWeYhcGs9y5kjrmbmfMix1td8yfDit3jYLHKyr89rKuZrqkjyp6Qk0mN-1VI6mg9AiIWn0GV0IgN3-RgxcTszYZIGQApZDIa9t2PdruDSbCiPvHwzFfmpBApUWjwJ93PMwM5Ryeqm5amDiIomJWt4IDgE4pHJ6CWQn6FWHuVYzBpgHc23d-vHBGlaor0LBWDcLv5PMVHKwvGd0_xgP671D5xkdfj8eo">
+        </div>
+        <div class="flex flex-col gap-1">
+          <span class="font-label-sm text-on-surface-variant uppercase tracking-wider text-xs">Amriswil</span>
+          <h3 class="font-headline-md text-on-surface text-lg">Gartenplanung von Grund auf</h3>
+        </div>
+      </a>
+      <a href="kontakt.html" class="flex flex-col gap-4 group">
+        <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-[0_4px_30px_rgba(45,90,39,0.08)]">
+          <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.05]" alt="Moderne Seeoase Detailansicht in Kreuzlingen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPqTs1iuAf8mOIwm-YwCnXr7gpMPoGgDO4buWGXRhLlF5jou-1ZxtinnssMM-Pn2IRVFcoFdy9AnHrvSsi3ML12ejP3ItABGcTqXBGC05q04gZYdbC1nnpn5eZJH2gly1Cr53tGde1e3THf8Js2xy3ONZd-n4rg9LCXRwmdxT-VVKuHT_zb5MJkA7qE6SS59qqHSjOW6gebEIAluAMoQIoagx8hMFfB4IXbJKy0AY9tash9H4iL0YAIg">
+        </div>
+        <div class="flex flex-col gap-1">
+          <span class="font-label-sm text-on-surface-variant uppercase tracking-wider text-xs">Kreuzlingen</span>
+          <h3 class="font-headline-md text-on-surface text-lg">Wasserspiel &amp; Sitzplatz</h3>
+        </div>
+      </a>
+    </div>
+
+    <div class="mt-24 text-center">
+      <p class="font-body-md text-on-surface-variant mb-6">Weitere Referenzen zeigen wir Ihnen gerne persönlich.</p>
+      <a href="kontakt.html" class="inline-block px-10 py-4 bg-transparent border border-outline-variant text-on-surface font-label-sm hover:border-primary hover:text-primary transition-all duration-300 tracking-widest uppercase text-xs">
+        Weitere Projekte anfragen
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="w-full bg-primary-container py-20 lg:py-28">
+  <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop flex flex-col items-center text-center gap-6">
+    <h2 class="font-headline-lg text-headline-lg text-on-primary-container max-w-2xl">Bereit für Ihren eigenen Traumgarten?</h2>
+    <p class="font-body-lg text-on-primary-container/80 max-w-xl">Kontaktieren Sie uns für eine unverbindliche Beratung – wir freuen uns auf Ihr Projekt.</p>
+    <a href="kontakt.html" class="bg-primary text-on-primary px-8 py-4 rounded-full font-label-sm hover:scale-[1.02] transition-transform inline-flex items-center gap-2">
+      Jetzt Kontakt aufnehmen
+      <span class="material-symbols-outlined">arrow_forward</span>
+    </a>
+  </div>
+</section>
+
+</div>
+</main>
+
+<footer class="w-full bg-surface-container py-24 lg:py-32 border-t border-outline-variant/20">
+  <div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-16">
+    <div class="flex flex-col gap-6">
+      <div class="flex items-center gap-4">
+        <span class="material-symbols-outlined text-primary text-[28px]">nature</span>
+        <span class="font-headline-md text-headline-md text-primary">Meyer Gartenglanz</span>
+      </div>
+      <p class="font-body-md text-on-surface-variant max-w-xs">Traditionelle Gartenpflege und moderner Gartenbau im Thurgau. Wir schaffen Räume für Ihre Erholung.</p>
+    </div>
+    <div class="flex flex-col gap-6">
+      <h4 class="font-headline-md text-headline-md text-on-surface">Schnelllinks</h4>
+      <nav class="flex flex-col gap-4">
+        <a class="font-body-md text-on-surface-variant hover:text-primary" href="leistungen.html">Unsere Leistungen</a>
+        <a class="font-body-md text-on-surface-variant hover:text-primary" href="projekte.html">Referenzprojekte</a>
+        <a class="font-body-md text-on-surface-variant hover:text-primary" href="kontakt.html">Kontakt aufnehmen</a>
+      </nav>
+    </div>
+    <div class="flex flex-col gap-6">
+      <h4 class="font-headline-md text-headline-md text-on-surface">Kontakt</h4>
+      <p class="font-body-md text-on-surface-variant">Region Thurgau &amp; Umgebung<br>Schweiz</p>
+      <div class="flex items-center gap-3 text-primary"><span class="material-symbols-outlined">mail</span><span class="font-body-md text-on-surface-variant">info@meyer-gartenglanz.ch</span></div>
+      <div class="flex items-center gap-3 text-primary"><span class="material-symbols-outlined">call</span><span class="font-body-md text-on-surface-variant">+41 52 000 00 00</span></div>
+    </div>
+  </div>
+  <div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop mt-24 pt-8 border-t border-outline-variant/30 text-center font-label-sm text-on-surface-variant opacity-60">
+    © 2026 Meyer Gartenglanz. Alle Rechte vorbehalten.
+  </div>
+</footer>
+
+<script>
+  document.getElementById('menu-toggle')?.addEventListener('click', function () {
+    var menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden');
+    menu.classList.toggle('flex');
+  });
+</script>
+</body>
+</html>
