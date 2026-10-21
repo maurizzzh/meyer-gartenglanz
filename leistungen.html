@@ -47,56 +47,59 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
 <main class="w-full pt-28">
 <div class="flex flex-col w-full">
 
-<!-- Hero + Services: feste Komposition, Text und Bild starr zueinander positioniert -->
-<section class="relative w-full h-screen bg-surface overflow-hidden -mt-28">
-  <div class="absolute" style="width:1440px;height:760px;left:50%;top:160px;transform:translateX(-50%);">
+<!-- Hero + Services: responsive, gestapelt auf Mobile -->
+<section class="relative w-full bg-surface pt-36 pb-20 lg:pt-44 lg:pb-28">
+  <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop flex flex-col items-center">
 
-    <!-- Bild: als echtes Element, fest positioniert -->
-    <img src="assets/images/hero-leistungen.jpg" alt="Meyer Gartenglanz Team bei Gartenbau- und Pflegearbeiten mit Fahrzeug, Bagger und Werkzeug" class="absolute" style="width:720px;left:50%;top:50%;transform:translate(-50%,-38.5%);">
-
-    <!-- Hero Text: fest oben mittig -->
-    <div class="absolute text-center flex flex-col items-center gap-2" style="top:0;left:50%;width:620px;transform:translateX(-50%);">
+    <!-- Hero Text -->
+    <div class="text-center flex flex-col items-center gap-2 max-w-2xl mb-10 lg:mb-14">
       <span class="font-label-sm text-accent uppercase tracking-widest bg-secondary-container/60 px-4 py-1 rounded-full">Leistungen</span>
       <h1 class="font-headline-lg text-headline-lg text-on-surface">Planung, Bau &amp; Pflege aus einer Hand</h1>
       <p class="font-body-md text-on-surface-variant">Mit Schweizer Präzision und einem tiefen Verständnis für die Natur gestalten, bauen und pflegen wir grüne Räume, die zum Verweilen einladen.</p>
     </div>
 
-    <!-- Links: Gartenbau & Neugestaltung, fest positioniert -->
-    <div class="absolute flex flex-col gap-2" style="left:90px;top:150px;width:260px;">
-      <div class="flex items-center gap-3">
-        <div class="font-headline-xl text-accent text-5xl leading-none">1</div>
-        <h2 class="font-headline-md text-xl text-on-surface">Gartenbau &amp; Neugestaltung</h2>
-      </div>
-      <p class="font-body-md text-lg text-on-surface-variant leading-snug">Von der ersten Skizze bis zur Übergabe: Wir planen und bauen Ihren Garten neu, mit Schweizer Präzision und Referenzen.</p>
-      <ul class="flex flex-col gap-1 mt-1 border-t border-outline-variant/30 pt-2">
-        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Gartenplanung</span></li>
-        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Terrassenbau</span></li>
-        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Wegebau</span></li>
-        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Trockenmauern</span></li>
-        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Sichtschutzbau</span></li>
-        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Teichbau</span></li>
-        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Bewässerung</span></li>
-        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Beleuchtung</span></li>
-        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Rasenneuanlage</span></li>
-      </ul>
+    <!-- Bild -->
+    <div class="w-full flex justify-center mb-12 lg:mb-16">
+      <img src="assets/images/hero-leistungen.jpg" alt="Meyer Gartenglanz Team bei Gartenbau- und Pflegearbeiten mit Fahrzeug, Bagger und Werkzeug" class="w-full max-w-[720px] h-auto rounded-xl">
     </div>
 
-    <!-- Rechts: Gartenunterhalt, fest positioniert -->
-    <div class="absolute flex flex-col gap-2" style="right:90px;top:150px;width:260px;">
-      <div class="flex items-center gap-3">
-        <div class="font-headline-xl text-accent text-5xl leading-none">2</div>
-        <h2 class="font-headline-md text-xl text-on-surface">Gartenunterhalt</h2>
+    <!-- Leistungs-Spalten -->
+    <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 max-w-4xl">
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center gap-3">
+          <div class="font-headline-xl text-accent text-5xl leading-none">1</div>
+          <h2 class="font-headline-md text-xl text-on-surface">Gartenbau &amp; Neugestaltung</h2>
+        </div>
+        <p class="font-body-md text-lg text-on-surface-variant leading-snug">Von der ersten Skizze bis zur Übergabe: Wir planen und bauen Ihren Garten neu, mit Schweizer Präzision und Referenzen.</p>
+        <ul class="flex flex-col gap-1 mt-1 border-t border-outline-variant/30 pt-2">
+          <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Gartenplanung</span></li>
+          <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Terrassenbau</span></li>
+          <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Wegebau</span></li>
+          <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Trockenmauern</span></li>
+          <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Sichtschutzbau</span></li>
+          <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Teichbau</span></li>
+          <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Bewässerung</span></li>
+          <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Beleuchtung</span></li>
+          <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Rasenneuanlage</span></li>
+        </ul>
       </div>
-      <p class="font-body-md text-lg text-on-surface-variant leading-snug">Für einen Garten, der sich von selbst um Sie kümmert: Wir übernehmen die wiederkehrende Pflege zuverlässig nach festem Rhythmus.</p>
-      <ul class="flex flex-col gap-1 mt-1 border-t border-outline-variant/30 pt-2">
-        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Rasenpflege</span></li>
-        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Heckenschnitt</span></li>
-        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Baumschnitt</span></li>
-        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Unkrautbekämpfung</span></li>
-        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Bewässerung warten</span></li>
-        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Laubentsorgung</span></li>
-        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Frühjahrsputz</span></li>
-      </ul>
+
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center gap-3">
+          <div class="font-headline-xl text-accent text-5xl leading-none">2</div>
+          <h2 class="font-headline-md text-xl text-on-surface">Gartenunterhalt</h2>
+        </div>
+        <p class="font-body-md text-lg text-on-surface-variant leading-snug">Für einen Garten, der sich von selbst um Sie kümmert: Wir übernehmen die wiederkehrende Pflege zuverlässig nach festem Rhythmus.</p>
+        <ul class="flex flex-col gap-1 mt-1 border-t border-outline-variant/30 pt-2">
+          <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Rasenpflege</span></li>
+          <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Heckenschnitt</span></li>
+          <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Baumschnitt</span></li>
+          <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Unkrautbekämpfung</span></li>
+          <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Bewässerung warten</span></li>
+          <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Laubentsorgung</span></li>
+          <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Frühjahrsputz</span></li>
+        </ul>
+      </div>
     </div>
 
   </div>
@@ -130,8 +133,12 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
       <div class="flex items-center gap-2 text-accent"><span class="material-symbols-outlined">call</span><span class="font-body-md">079 292 21 21</span></div>
     </div>
   </div>
-  <div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop mt-12 pt-8 border-t border-outline-variant/30 text-center font-label-sm text-on-surface-variant opacity-60">
-    © 2026 Meyer Gartenglanz. Alle Rechte vorbehalten.
+  <div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop mt-12 pt-8 border-t border-outline-variant/30 flex flex-col md:flex-row items-center justify-between gap-4 text-center font-label-sm text-on-surface-variant opacity-60">
+    <span>© 2026 Meyer Gartenglanz. Alle Rechte vorbehalten.</span>
+    <div class="flex items-center gap-6">
+      <a href="impressum.html" class="hover:text-accent transition-colors">Impressum</a>
+      <a href="agb.html" class="hover:text-accent transition-colors">AGB</a>
+    </div>
   </div>
 </footer>
 
