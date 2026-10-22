@@ -55,15 +55,12 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter lg:gap-32">
     <!-- Contact Form -->
     <div class="bg-surface-container-lowest p-8 rounded-xl shadow-xl flex flex-col gap-10 relative overflow-hidden lg:p-10">
-      <!--
-        Hinweis: Diese Seite wird als statische GitHub-Pages-Website gehostet.
-        Ein reines HTML-Formular kann keine E-Mails verschicken. Damit "Nachricht senden"
-        tatsächlich eine E-Mail auslöst, muss ein Formular-Dienst angebunden werden,
-        z. B. Formspree (https://formspree.io) oder Web3Forms (https://web3forms.com) –
-        beide bieten einen kostenlosen Einstiegsplan. Einfach form action="https://formspree.io/f/DEINE-ID"
-        setzen, sobald ein Account eingerichtet ist.
-      -->
-      <form class="flex flex-col relative z-10 gap-4" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div id="form-success" class="hidden relative z-10 flex-col gap-3 items-start bg-primary-container/40 border border-primary/30 rounded-lg p-6">
+        <span class="material-symbols-outlined text-primary text-[32px]">check_circle</span>
+        <p class="font-body-lg text-on-background">Vielen Dank für Ihre Nachricht! Wir melden uns innerhalb von 1–2 Werktagen bei Ihnen.</p>
+      </div>
+      <form id="contact-form" class="flex flex-col relative z-10 gap-4" action="https://formspree.io/f/xnppaayd" method="POST">
+        <input type="hidden" name="_subject" value="Neue Anfrage von meyer-gartenglanz.ch">
         <div class="flex flex-col gap-3">
           <label class="font-label-sm text-label-sm text-on-surface-variant" for="name">Name</label>
           <input class="bg-surface p-4 rounded-lg font-body-lg text-body-lg text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all border border-outline-variant/30" id="name" name="name" required type="text">
@@ -184,6 +181,38 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
     var menu = document.getElementById('mobile-menu');
     menu.classList.toggle('hidden');
     menu.classList.toggle('flex');
+  });
+
+  var contactForm = document.getElementById('contact-form');
+  contactForm?.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var submitBtn = contactForm.querySelector('button[type="submit"]');
+    var originalBtnHtml = submitBtn.innerHTML;
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span>Wird gesendet...</span>';
+
+    fetch(contactForm.action, {
+      method: 'POST',
+      body: new FormData(contactForm),
+      headers: { 'Accept': 'application/json' }
+    }).then(function (response) {
+      if (response.ok) {
+        contactForm.classList.add('hidden');
+        document.getElementById('form-success').classList.remove('hidden');
+        document.getElementById('form-success').classList.add('flex');
+      } else {
+        response.json().then(function (data) {
+          var msg = (data && data.errors) ? data.errors.map(function (er) { return er.message; }).join(', ') : 'Es gab ein Problem beim Senden. Bitte versuchen Sie es erneut oder rufen Sie uns an.';
+          alert(msg);
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnHtml;
+        });
+      }
+    }).catch(function () {
+      alert('Es gab ein Problem beim Senden. Bitte versuchen Sie es erneut oder rufen Sie uns an.');
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalBtnHtml;
+    });
   });
 </script>
 </body>
