@@ -21,7 +21,7 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
 <header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(122,14,26,0.08)]">
   <div class="h-28 max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between">
     <a href="index.html" class="flex items-center">
-      <img src="assets/images/logo.png" alt="Meyer Gartenglanz" class="h-28 w-auto">
+      <img src="assets/images/logo.png" alt="Meyer Gartenglanz" class="h-24 w-auto">
     </a>
     <nav class="hidden md:flex items-center gap-gutter">
       <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-accent transition-colors" href="index.html">Home</a>
@@ -54,13 +54,13 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
     <!-- Hero Text -->
     <div class="text-center flex flex-col items-center gap-2 max-w-2xl mb-10 lg:mb-14">
       <span class="font-label-sm text-accent uppercase tracking-widest bg-secondary-container/60 px-4 py-1 rounded-full">Gartengestaltung</span>
-      <h1 class="font-headline-lg text-headline-lg text-on-surface">Planung, Bau &amp; Pflege aus einer Hand</h1>
+      <h1 class="font-headline-xl text-headline-xl-mobile lg:text-headline-xl text-on-surface">Planung, Bau &amp; Pflege aus einer Hand</h1>
       <p class="font-body-md text-on-surface-variant">Mit Schweizer Präzision und einem tiefen Verständnis für die Natur gestalten, bauen und pflegen wir grüne Räume, die zum Verweilen einladen.</p>
     </div>
 
     <!-- Bild -->
     <div class="w-full flex justify-center mb-12 lg:mb-16">
-      <img src="assets/images/hero-leistungen.jpg" alt="Meyer Gartenglanz Team bei Gartenbau- und Pflegearbeiten mit Fahrzeug, Bagger und Werkzeug" class="w-full max-w-[720px] h-auto rounded-xl">
+      <img src="assets/images/gartengestaltung-illustration.webp" alt="Meyer Gartenglanz Illustration: Team bei Gartenbau- und Pflegearbeiten mit Fahrzeug, Bagger und Werkzeug" class="w-full max-w-[760px] h-auto">
     </div>
 
     <!-- Unterreiter (Tabs) -->
@@ -73,7 +73,7 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
 
       <!-- Panel: Gartenplanung -->
       <div class="tab-panel w-full flex flex-col gap-2 items-center text-center" data-panel="planung" role="tabpanel">
-        <h2 class="font-headline-md text-xl text-on-surface">Gartenplanung</h2>
+        <h2 class="font-headline-md text-headline-md text-on-surface">Gartenplanung</h2>
         <p class="font-body-md text-lg text-on-surface-variant leading-snug max-w-xl">Jedes Projekt beginnt mit einer durchdachten Planung: Wir analysieren Ihren Standort, entwickeln ein passendes Gestaltungskonzept und stimmen Pflanzen- und Materialwahl auf Ihre Wünsche ab.</p>
         <ul class="flex flex-col gap-1 mt-3 pt-2 border-t border-outline-variant/30 w-full max-w-sm text-left">
           <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Standortanalyse</span></li>
@@ -87,7 +87,7 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
 
       <!-- Panel: Gartenbau -->
       <div class="tab-panel hidden w-full flex-col gap-2 items-center text-center" data-panel="bau" role="tabpanel">
-        <h2 class="font-headline-md text-xl text-on-surface">Gartenbau</h2>
+        <h2 class="font-headline-md text-headline-md text-on-surface">Gartenbau</h2>
         <p class="font-body-md text-lg text-on-surface-variant leading-snug max-w-xl">Von der Planung zur Umsetzung: Wir bauen Ihren Garten neu, mit Schweizer Präzision und Referenzen im ganzen Thurgau.</p>
         <ul class="flex flex-col gap-1 mt-3 pt-2 border-t border-outline-variant/30 w-full max-w-sm text-left">
           <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Terrassenbau</span></li>
@@ -103,7 +103,7 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
 
       <!-- Panel: Gartenpflege -->
       <div class="tab-panel hidden w-full flex-col gap-2 items-center text-center" data-panel="pflege" role="tabpanel">
-        <h2 class="font-headline-md text-xl text-on-surface">Gartenpflege</h2>
+        <h2 class="font-headline-md text-headline-md text-on-surface">Gartenpflege</h2>
         <p class="font-body-md text-lg text-on-surface-variant leading-snug max-w-xl">Für einen Garten, der sich von selbst um Sie kümmert: Wir übernehmen die wiederkehrende Pflege zuverlässig nach festem Rhythmus.</p>
         <ul class="flex flex-col gap-1 mt-3 pt-2 border-t border-outline-variant/30 w-full max-w-sm text-left">
           <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Rasenpflege</span></li>
