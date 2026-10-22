@@ -60,7 +60,7 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
 
     <!-- Bild -->
     <div class="w-full flex justify-center mb-12 lg:mb-16">
-      <img src="assets/images/gartengestaltung-illustration.webp" alt="Meyer Gartenglanz Illustration: Team bei Gartenbau- und Pflegearbeiten mit Fahrzeug, Bagger und Werkzeug" class="w-full max-w-[760px] h-auto">
+      <img src="assets/images/gartengestaltung-illustration-v2.webp" alt="Meyer Gartenglanz Illustration: Team bei Gartenbau- und Pflegearbeiten mit Fahrzeug, Bagger und Werkzeug" class="w-full max-w-[760px] h-auto">
     </div>
 
     <!-- Unterreiter (Tabs) -->
@@ -165,36 +165,72 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
       <!-- Panel: Gartenbau -->
       <div class="tab-panel hidden w-full flex-col gap-2 items-center text-center" data-panel="bau" role="tabpanel">
         <h2 class="font-headline-md text-headline-md text-on-surface">Gartenbau</h2>
-        <p class="font-body-md text-lg text-on-surface-variant leading-snug max-w-xl">Von der Planung zur Umsetzung: Wir bauen Ihren Garten neu, mit Schweizer Präzision und Referenzen im ganzen Thurgau.</p>
-        <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-stretch text-left mt-8">
-          <div class="relative w-full">
-            <img src="assets/images/hero-leistungen.jpg" alt="Gartenbau-Arbeiten von Meyer Gartenglanz" class="w-full h-full min-h-[320px] object-cover rounded-xl shadow-lg">
-            <img src="assets/images/team-marius.jpg" alt="Team von Meyer Gartenglanz auf der Baustelle" class="hidden sm:block absolute -bottom-8 -right-6 w-40 h-40 object-cover rounded-xl shadow-xl border-4 border-surface">
+        <p class="font-body-md text-lg text-on-surface-variant leading-snug max-w-xl">Ihr Garten, neu gebaut: Von den ersten Erdarbeiten bis zum letzten Grashalm begleiten wir Ihr Projekt mit Schweizer Präzision und sichtbarem Resultat.</p>
+
+        <!-- Bild-Galerie -->
+        <div class="w-full grid grid-cols-1 sm:grid-cols-3 gap-5 mt-8 text-left">
+          <div class="rounded-xl overflow-hidden shadow-lg bg-surface-container-low group">
+            <div class="overflow-hidden"><img src="assets/images/gartenbau-erdarbeiten.webp" alt="Erdarbeiten und Aushub bei einem Gartenbau-Projekt von Meyer Gartenglanz" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"></div>
+            <div class="p-4"><span class="font-body-md font-semibold text-on-surface">Erdarbeiten &amp; Aushub</span></div>
           </div>
-          <div class="flex flex-col gap-5">
-            <div class="bg-surface border border-outline-variant/40 rounded-xl p-6">
-              <h3 class="font-body-md font-semibold text-on-surface text-lg mb-3">Aussenanlagen</h3>
-              <ul class="grid grid-cols-2 gap-x-4 gap-y-2">
-                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Terrassenbau</span></li>
-                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Wegebau</span></li>
-                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Trockenmauern</span></li>
-                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Sichtschutzbau</span></li>
-              </ul>
-            </div>
-            <div class="bg-surface border border-outline-variant/40 rounded-xl p-6">
-              <h3 class="font-body-md font-semibold text-on-surface text-lg mb-3">Wasser, Licht &amp; Rasen</h3>
-              <ul class="grid grid-cols-2 gap-x-4 gap-y-2">
-                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Teichbau</span></li>
-                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Bewässerung</span></li>
-                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Beleuchtung</span></li>
-                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Rasenneuanlage</span></li>
-              </ul>
-            </div>
-            <a href="kontakt.html" class="bg-primary text-on-primary px-6 py-3 rounded-full font-label-sm hover:scale-[1.02] transition-transform inline-flex items-center justify-center gap-2 self-start">
-              Projekt besprechen
-              <span class="material-symbols-outlined">arrow_forward</span>
-            </a>
+          <div class="rounded-xl overflow-hidden shadow-lg bg-surface-container-low group">
+            <div class="overflow-hidden"><img src="assets/images/gartenbau-wegebau.webp" alt="Wegebau und Pflästerung bei einem Gartenbau-Projekt von Meyer Gartenglanz" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"></div>
+            <div class="p-4"><span class="font-body-md font-semibold text-on-surface">Wegebau &amp; Pflästerung</span></div>
           </div>
+          <div class="rounded-xl overflow-hidden shadow-lg bg-surface-container-low group">
+            <div class="overflow-hidden"><img src="assets/images/gartenbau-fertigstellung.webp" alt="Fertiggestellter Garten mit Teich und gepflegtem Rasen von Meyer Gartenglanz" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"></div>
+            <div class="p-4"><span class="font-body-md font-semibold text-on-surface">Fertigstellung &amp; Resultat</span></div>
+          </div>
+        </div>
+
+        <!-- Vorteile -->
+        <div class="w-full grid grid-cols-2 lg:grid-cols-4 gap-4 mt-10 text-left">
+          <div class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary text-[22px] flex-shrink-0">verified</span>
+            <span class="font-body-md text-sm text-on-surface">Festpreis-Offerte ohne versteckte Kosten</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary text-[22px] flex-shrink-0">workspace_premium</span>
+            <span class="font-body-md text-sm text-on-surface">Schweizer Qualität &amp; Materialien</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary text-[22px] flex-shrink-0">event_available</span>
+            <span class="font-body-md text-sm text-on-surface">Verbindliche Terminplanung</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary text-[22px] flex-shrink-0">groups</span>
+            <span class="font-body-md text-sm text-on-surface">Persönliche Betreuung vom Start bis zum Schluss</span>
+          </div>
+        </div>
+
+        <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-5 mt-8 text-left">
+          <div class="bg-surface border border-outline-variant/40 rounded-xl p-6">
+            <h3 class="font-body-md font-semibold text-on-surface text-lg mb-3">Aussenanlagen</h3>
+            <ul class="grid grid-cols-2 gap-x-4 gap-y-2">
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Terrassenbau</span></li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Wegebau</span></li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Trockenmauern</span></li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Sichtschutzbau</span></li>
+            </ul>
+          </div>
+          <div class="bg-surface border border-outline-variant/40 rounded-xl p-6">
+            <h3 class="font-body-md font-semibold text-on-surface text-lg mb-3">Wasser, Licht &amp; Rasen</h3>
+            <ul class="grid grid-cols-2 gap-x-4 gap-y-2">
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Teichbau</span></li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Bewässerung</span></li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Beleuchtung</span></li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Rasenneuanlage</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="w-full bg-secondary-container/40 rounded-xl p-8 lg:p-10 mt-8 flex flex-col items-center text-center gap-4">
+          <h3 class="font-headline-md text-headline-md text-on-surface">Bereit, Ihren Garten neu zu bauen?</h3>
+          <p class="font-body-md text-on-surface-variant max-w-lg">Vereinbaren Sie eine kostenlose, unverbindliche Erstberatung – wir besprechen Ihr Projekt und erstellen Ihnen eine transparente Offerte.</p>
+          <a href="kontakt.html" class="bg-primary text-on-primary px-8 py-3.5 rounded-full font-label-sm hover:scale-[1.02] transition-transform inline-flex items-center gap-2">
+            Kostenlose Erstberatung anfragen
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
         </div>
       </div>
 
