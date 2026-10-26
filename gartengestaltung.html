@@ -47,34 +47,89 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
 <main class="w-full pt-28">
 <div class="flex flex-col w-full">
 
-<!-- Hero + Gartengestaltung mit Unterreitern -->
-<section class="relative w-full bg-surface pt-36 pb-20 lg:pt-44 lg:pb-28">
+<!-- Hero -->
+<section class="relative w-full bg-surface pt-36 pb-16 lg:pt-44 lg:pb-20">
   <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop flex flex-col items-center">
-
-    <!-- Hero Text -->
     <div class="text-center flex flex-col items-center gap-2 max-w-2xl mb-10 lg:mb-14">
       <span class="font-label-sm text-accent uppercase tracking-widest bg-secondary-container/60 px-4 py-1 rounded-full">Gartengestaltung</span>
       <h1 class="font-headline-xl text-headline-xl-mobile lg:text-headline-xl text-on-surface">Planung, Bau &amp; Pflege aus einer Hand</h1>
       <p class="font-body-md text-on-surface-variant">Mit Schweizer Präzision und einem tiefen Verständnis für die Natur gestalten, bauen und pflegen wir grüne Räume, die zum Verweilen einladen.</p>
     </div>
-
-    <!-- Bild -->
-    <div class="w-full flex justify-center mb-12 lg:mb-16">
-      <img src="assets/images/gartengestaltung-illustration-v2.webp" alt="Meyer Gartenglanz Illustration: Team bei Gartenbau- und Pflegearbeiten mit Fahrzeug, Bagger und Werkzeug" class="w-full max-w-[760px] h-auto">
+    <div class="w-full flex justify-center mb-10 lg:mb-12">
+      <img src="assets/images/gartengestaltung-illustration-v2.webp" alt="Meyer Gartenglanz Illustration: Team bei Gartenbau- und Pflegearbeiten mit Fahrzeug, Bagger und Werkzeug" class="w-full max-w-[680px] h-auto">
     </div>
+    <div class="flex flex-wrap items-center justify-center gap-3">
+      <a href="#planung" class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-label-sm hover:scale-[1.02] transition-transform">Gartenplanung</a>
+      <a href="#bau" class="border border-outline-variant text-on-surface-variant hover:border-primary hover:text-accent px-6 py-2.5 rounded-full font-label-sm transition-colors">Gartenbau</a>
+      <a href="#pflege" class="border border-outline-variant text-on-surface-variant hover:border-primary hover:text-accent px-6 py-2.5 rounded-full font-label-sm transition-colors">Gartenpflege</a>
+    </div>
+  </div>
+</section>
 
-    <!-- Unterreiter (Tabs) -->
-    <div class="w-full flex flex-col items-center max-w-5xl">
-      <div class="flex flex-wrap items-center justify-center gap-3 mb-10 lg:mb-14" role="tablist" aria-label="Gartengestaltung Unterreiter">
-        <button type="button" class="tab-btn bg-primary text-on-primary px-6 py-2.5 rounded-full font-label-sm transition-colors" data-tab="planung" role="tab" aria-selected="true">Gartenplanung</button>
-        <button type="button" class="tab-btn border border-outline-variant text-on-surface-variant hover:border-primary hover:text-accent px-6 py-2.5 rounded-full font-label-sm transition-colors" data-tab="bau" role="tab" aria-selected="false">Gartenbau</button>
-        <button type="button" class="tab-btn border border-outline-variant text-on-surface-variant hover:border-primary hover:text-accent px-6 py-2.5 rounded-full font-label-sm transition-colors" data-tab="pflege" role="tab" aria-selected="false">Gartenpflege</button>
+<!-- Werte -->
+<section class="w-full bg-surface pb-16 lg:pb-24">
+  <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop grid grid-cols-1 sm:grid-cols-3 gap-5">
+    <div class="relative rounded-xl overflow-hidden h-72 group">
+      <img src="assets/images/gartenbau-erdarbeiten.webp" alt="Individuelle Gartenprojekte von Meyer Gartenglanz" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10"></div>
+      <div class="relative z-10 h-full flex flex-col justify-between p-6">
+        <span class="material-symbols-outlined text-white/80 text-[28px]">expand_more</span>
+        <div class="flex flex-col gap-1">
+          <span class="font-headline-md text-headline-md text-white">Individuell</span>
+          <p class="font-body-md text-sm text-white/85">Jeder Garten ist anders. Wir planen und bauen nach Ihren Wünschen, nicht nach Schema.</p>
+        </div>
       </div>
+    </div>
+    <div class="relative rounded-xl overflow-hidden h-72 group">
+      <img src="assets/images/gartenbau-wegebau.webp" alt="Nachhaltiger Gartenbau von Meyer Gartenglanz" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10"></div>
+      <div class="relative z-10 h-full flex flex-col justify-between p-6">
+        <span class="material-symbols-outlined text-white/80 text-[28px]">expand_more</span>
+        <div class="flex flex-col gap-1">
+          <span class="font-headline-md text-headline-md text-white">Langlebig</span>
+          <p class="font-body-md text-sm text-white/85">Hochwertige Materialien und saubere Verarbeitung, damit Sie lange Freude an Ihrem Garten haben.</p>
+        </div>
+      </div>
+    </div>
+    <div class="relative rounded-xl overflow-hidden h-72 group">
+      <img src="assets/images/gartenpflege-rasenmaehen.webp" alt="Zuverlässige Gartenpflege von Meyer Gartenglanz" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10"></div>
+      <div class="relative z-10 h-full flex flex-col justify-between p-6">
+        <span class="material-symbols-outlined text-white/80 text-[28px]">expand_more</span>
+        <div class="flex flex-col gap-1">
+          <span class="font-headline-md text-headline-md text-white">Zuverlässig</span>
+          <p class="font-body-md text-sm text-white/85">Feste Rhythmen, klare Absprachen – auf uns ist Verlass, Saison für Saison.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <!-- Panel: Gartenplanung -->
-      <div class="tab-panel w-full flex flex-col gap-2 items-center text-center" data-panel="planung" role="tabpanel">
-        <h2 class="font-headline-md text-headline-md text-on-surface">Gartenplanung</h2>
-        <p class="font-body-md text-lg text-on-surface-variant leading-snug max-w-xl">Jedes Projekt beginnt mit einer durchdachten Planung: Wir analysieren Ihren Standort, entwickeln ein passendes Gestaltungskonzept und stimmen Pflanzen- und Materialwahl auf Ihre Wünsche ab.</p>
+<!-- Gartenplanung: Split-Intro -->
+<section id="planung" class="relative w-full overflow-hidden bg-on-primary-fixed scroll-mt-28">
+  <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
+    <span class="font-headline-xl font-bold text-white/[0.06] text-[20vw] leading-none whitespace-nowrap">DURCHDACHT</span>
+  </div>
+  <div class="relative grid grid-cols-1 lg:grid-cols-2 min-h-[460px]">
+    <div class="relative z-10 flex flex-col justify-center gap-4 px-margin-mobile lg:px-margin-desktop py-16 lg:py-20">
+      <span class="material-symbols-outlined text-white/70 text-[28px]">expand_more</span>
+      <h2 class="font-headline-lg text-headline-lg text-white">Gartenplanung</h2>
+      <p class="font-body-md text-white/80 max-w-md">Von der ersten Standortanalyse bis zum fertigen Gestaltungskonzept: Wir planen Ihren Garten durchdacht und auf Ihre Wünsche zugeschnitten.</p>
+      <a href="#planung-details" class="self-start bg-white text-on-surface px-6 py-2.5 rounded-full font-label-sm hover:scale-[1.02] transition-transform mt-1">GARTENPLANUNG</a>
+    </div>
+    <div class="relative" style="clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%);">
+      <img src="assets/images/hero-home.jpg" alt="Gartenplan auf einer neu gestalteten Gartenanlage von Meyer Gartenglanz" class="absolute inset-0 w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black/10"></div>
+    </div>
+  </div>
+</section>
+
+<section id="planung-details" class="w-full bg-surface pt-16 lg:pt-20 pb-16 lg:pb-20 scroll-mt-28">
+  <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop flex flex-col items-center">
+    <div class="w-full flex flex-col gap-2 items-center text-center">
+      <h3 class="font-headline-md text-headline-md text-on-surface">Jedes Projekt beginnt mit einer durchdachten Planung</h3>
+      <p class="font-body-md text-lg text-on-surface-variant leading-snug max-w-xl">Wir analysieren Ihren Standort, entwickeln ein passendes Gestaltungskonzept und stimmen Pflanzen- und Materialwahl auf Ihre Wünsche ab.</p>
+    </div>
 
         <!-- Verlauf / Ablauf als verbundene Zeitachse -->
         <div class="w-full mt-10 pt-8 border-t border-outline-variant/30 text-left">
@@ -131,12 +186,34 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
             </div>
           </div>
         </div>
-      </div>
+  </div>
+</section>
 
-      <!-- Panel: Gartenbau -->
-      <div class="tab-panel hidden w-full flex-col gap-2 items-center text-center" data-panel="bau" role="tabpanel">
-        <h2 class="font-headline-md text-headline-md text-on-surface">Gartenbau</h2>
-        <p class="font-body-md text-lg text-on-surface-variant leading-snug max-w-xl">Ihr Garten, neu gebaut: Von den ersten Erdarbeiten bis zum letzten Grashalm begleiten wir Ihr Projekt mit Schweizer Präzision und sichtbarem Resultat.</p>
+<!-- Gartenbau: Split-Intro -->
+<section id="bau" class="relative w-full overflow-hidden bg-on-primary-fixed scroll-mt-28">
+  <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
+    <span class="font-headline-xl font-bold text-white/[0.06] text-[20vw] leading-none whitespace-nowrap">PRÄZISE</span>
+  </div>
+  <div class="relative grid grid-cols-1 lg:grid-cols-2 min-h-[460px]">
+    <div class="relative lg:order-1" style="clip-path: polygon(0 0, 92% 0, 100% 100%, 0 100%);">
+      <img src="assets/images/gartenbau-erdarbeiten.webp" alt="Erdarbeiten bei einem Gartenbau-Projekt von Meyer Gartenglanz" class="absolute inset-0 w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black/10"></div>
+    </div>
+    <div class="relative z-10 lg:order-2 flex flex-col justify-center gap-4 px-margin-mobile lg:px-margin-desktop py-16 lg:py-20">
+      <span class="material-symbols-outlined text-white/70 text-[28px]">expand_more</span>
+      <h2 class="font-headline-lg text-headline-lg text-white">Gartenbau</h2>
+      <p class="font-body-md text-white/80 max-w-md">Kompetent und erfahren setzen wir Ihren Garten um – von den ersten Erdarbeiten bis zum letzten Grashalm, mit Schweizer Präzision und sichtbarem Resultat.</p>
+      <a href="#bau-details" class="self-start bg-white text-on-surface px-6 py-2.5 rounded-full font-label-sm hover:scale-[1.02] transition-transform mt-1">GARTENBAU</a>
+    </div>
+  </div>
+</section>
+
+<section id="bau-details" class="w-full bg-surface pt-16 lg:pt-20 pb-16 lg:pb-20 scroll-mt-28">
+  <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop flex flex-col items-center">
+    <div class="w-full flex flex-col gap-2 items-center text-center">
+      <h3 class="font-headline-md text-headline-md text-on-surface">Von der Planung zur Umsetzung</h3>
+      <p class="font-body-md text-lg text-on-surface-variant leading-snug max-w-xl">Ihr Garten, neu gebaut: Wir begleiten Ihr Projekt mit Schweizer Präzision und Referenzen im ganzen Thurgau.</p>
+    </div>
 
         <!-- Bild-Galerie -->
         <div class="w-full grid grid-cols-1 sm:grid-cols-3 gap-5 mt-8 text-left">
@@ -203,13 +280,31 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
             <span class="material-symbols-outlined">arrow_forward</span>
           </a>
         </div>
-      </div>
+  </div>
+</section>
 
-      <!-- Panel: Gartenpflege -->
-      <div class="tab-panel hidden w-full flex-col gap-2 items-center text-center" data-panel="pflege" role="tabpanel">
-        <h2 class="font-headline-md text-headline-md text-on-surface">Gartenpflege</h2>
-        <p class="font-body-md text-lg text-on-surface-variant leading-snug max-w-xl">Für einen Garten, der sich von selbst um Sie kümmert: Wir übernehmen die wiederkehrende Pflege zuverlässig nach festem Rhythmus.</p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 pt-8 border-t border-outline-variant/30 w-full text-left">
+<!-- Gartenpflege: Split-Intro -->
+<section id="pflege" class="relative w-full overflow-hidden bg-on-primary-fixed scroll-mt-28">
+  <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
+    <span class="font-headline-xl font-bold text-white/[0.06] text-[20vw] leading-none whitespace-nowrap">GEPFLEGT</span>
+  </div>
+  <div class="relative grid grid-cols-1 lg:grid-cols-2 min-h-[460px]">
+    <div class="relative z-10 flex flex-col justify-center gap-4 px-margin-mobile lg:px-margin-desktop py-16 lg:py-20">
+      <span class="material-symbols-outlined text-white/70 text-[28px]">expand_more</span>
+      <h2 class="font-headline-lg text-headline-lg text-white">Gartenpflege</h2>
+      <p class="font-body-md text-white/80 max-w-md">Für einen Garten, der sich von selbst um Sie kümmert: Wir übernehmen die wiederkehrende Pflege zuverlässig nach festem Rhythmus.</p>
+      <a href="#pflege-details" class="self-start bg-white text-on-surface px-6 py-2.5 rounded-full font-label-sm hover:scale-[1.02] transition-transform mt-1">GARTENPFLEGE</a>
+    </div>
+    <div class="relative" style="clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%);">
+      <img src="assets/images/gartenpflege-rasenmaehen.webp" alt="Rasenpflege durch Meyer Gartenglanz" class="absolute inset-0 w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black/10"></div>
+    </div>
+  </div>
+</section>
+
+<section id="pflege-details" class="w-full bg-surface pt-16 lg:pt-20 pb-16 lg:pb-20 scroll-mt-28">
+  <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop flex flex-col items-center">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full text-left">
           <div class="bg-surface border border-outline-variant/40 rounded-xl p-5 flex flex-col gap-2 hover:border-primary/50 hover:shadow-md transition-all">
             <span class="w-10 h-10 rounded-full bg-secondary-container/60 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span></span>
             <span class="font-body-md font-semibold text-on-surface">Rasenpflege</span>
@@ -271,12 +366,33 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
             </a>
           </div>
         </div>
-      </div>
-    </div>
-
   </div>
 </section>
 
+<!-- Projekt-Galerie -->
+<section class="w-full bg-surface pb-section-gap">
+  <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop">
+    <div class="max-w-2xl mb-10 lg:mb-14">
+      <h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Wenn schöne Gärten entstehen</h2>
+      <p class="font-body-md text-on-surface-variant leading-relaxed mb-3">Von der ersten Skizze bis zur letzten Pflanze: Jedes Projekt ist für uns ein eigenes kleines Handwerk, in das wir Erfahrung und Sorgfalt stecken.</p>
+      <p class="font-body-md text-on-surface-variant leading-relaxed">Einen Eindruck unserer Arbeit und abgeschlossener Projekte finden Sie auf unserer Referenzseite.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+      <div class="rounded-xl overflow-hidden shadow-lg"><img src="assets/images/gartenbau-erdarbeiten.webp" alt="Erdarbeiten bei einem Gartenbau-Projekt" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"></div>
+      <div class="rounded-xl overflow-hidden shadow-lg"><img src="assets/images/gartenbau-wegebau.webp" alt="Wegebau bei einem Gartenbau-Projekt" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"></div>
+      <div class="rounded-xl overflow-hidden shadow-lg"><img src="assets/images/gartenpflege-rasenmaehen.webp" alt="Gartenpflege durch Meyer Gartenglanz" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"></div>
+    </div>
+    <div class="mt-5 rounded-xl overflow-hidden shadow-lg">
+      <img src="assets/images/gartenbau-fertigstellung.webp" alt="Fertiggestellter Garten mit Teich von Meyer Gartenglanz" class="w-full h-72 lg:h-96 object-cover hover:scale-[1.02] transition-transform duration-300">
+    </div>
+    <div class="flex justify-center mt-10">
+      <a href="projekte.html" class="bg-primary text-on-primary px-8 py-3.5 rounded-full font-label-sm hover:scale-[1.02] transition-transform inline-flex items-center gap-2">
+        Unsere Projekte ansehen
+        <span class="material-symbols-outlined">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</section>
 
 </div>
 </main>
@@ -319,31 +435,6 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
     var menu = document.getElementById('mobile-menu');
     menu.classList.toggle('hidden');
     menu.classList.toggle('flex');
-  });
-
-  var tabBtns = document.querySelectorAll('.tab-btn');
-  var tabPanels = document.querySelectorAll('.tab-panel');
-  tabBtns.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      tabBtns.forEach(function (b) {
-        b.classList.remove('bg-primary', 'text-on-primary');
-        b.classList.add('border', 'border-outline-variant', 'text-on-surface-variant');
-        b.setAttribute('aria-selected', 'false');
-      });
-      btn.classList.remove('border', 'border-outline-variant', 'text-on-surface-variant');
-      btn.classList.add('bg-primary', 'text-on-primary');
-      btn.setAttribute('aria-selected', 'true');
-
-      tabPanels.forEach(function (panel) {
-        if (panel.dataset.panel === btn.dataset.tab) {
-          panel.classList.remove('hidden');
-          panel.classList.add('flex');
-        } else {
-          panel.classList.add('hidden');
-          panel.classList.remove('flex');
-        }
-      });
-    });
   });
 </script>
 </body>
