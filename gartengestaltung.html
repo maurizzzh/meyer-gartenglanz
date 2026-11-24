@@ -34,6 +34,7 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
             <a class="block px-5 py-2.5 font-label-sm text-on-surface-variant hover:text-accent hover:bg-surface-container-high transition-colors" href="gartenplanung.html">Gartenplanung</a>
             <a class="block px-5 py-2.5 font-label-sm text-on-surface-variant hover:text-accent hover:bg-surface-container-high transition-colors" href="gartenbau.html">Gartenbau</a>
             <a class="block px-5 py-2.5 font-label-sm text-on-surface-variant hover:text-accent hover:bg-surface-container-high transition-colors" href="gartenpflege.html">Gartenpflege</a>
+            <a class="block px-5 py-2.5 font-label-sm text-on-surface-variant hover:text-accent hover:bg-surface-container-high transition-colors" href="zusaetzliche-leistungen.html">Zusätzliche Leistungen</a>
           </div>
         </div>
       </div>
@@ -53,6 +54,7 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
     <a class="pl-4 font-label-sm text-label-sm text-on-surface-variant" href="gartenplanung.html">Gartenplanung</a>
     <a class="pl-4 font-label-sm text-label-sm text-on-surface-variant" href="gartenbau.html">Gartenbau</a>
     <a class="pl-4 font-label-sm text-label-sm text-on-surface-variant" href="gartenpflege.html">Gartenpflege</a>
+    <a class="pl-4 font-label-sm text-label-sm text-on-surface-variant" href="zusaetzliche-leistungen.html">Zusätzliche Leistungen</a>
     <a class="font-label-sm text-label-sm text-on-surface-variant" href="ueber-uns.html">Über uns</a>
     <a class="font-label-sm text-label-sm text-on-surface-variant" href="kontakt.html">Kontakt</a>
   </nav>
@@ -76,6 +78,7 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
       <a href="gartenplanung.html" class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-label-sm hover:scale-[1.02] transition-transform">Gartenplanung</a>
       <a href="gartenbau.html" class="border border-outline-variant text-on-surface-variant hover:border-primary hover:text-accent px-6 py-2.5 rounded-full font-label-sm transition-colors">Gartenbau</a>
       <a href="gartenpflege.html" class="border border-outline-variant text-on-surface-variant hover:border-primary hover:text-accent px-6 py-2.5 rounded-full font-label-sm transition-colors">Gartenpflege</a>
+      <a href="zusaetzliche-leistungen.html" class="border border-outline-variant text-on-surface-variant hover:border-primary hover:text-accent transition-colors px-6 py-2.5 rounded-full font-label-sm">Zusätzliche Leistungen</a>
     </div>
   </div>
 </section>
@@ -173,6 +176,25 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
     </div>
     <div class="relative" style="clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%);">
       <img src="assets/images/gartenpflege-intro-photo.webp" alt="Rasenpflege durch Meyer Gartenglanz" class="absolute inset-0 w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black/10"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Zusätzliche Leistungen: Split-Intro -->
+<section class="relative w-full overflow-hidden bg-on-primary-fixed scroll-mt-28">
+  <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
+    <span class="font-headline-xl font-bold text-white/[0.06] text-[20vw] leading-none whitespace-nowrap">ZUVERLÄSSIG</span>
+  </div>
+  <div class="relative grid grid-cols-1 lg:grid-cols-2 min-h-[460px]">
+    <div class="relative z-10 flex flex-col justify-center gap-4 px-margin-mobile lg:px-margin-desktop py-16 lg:py-20">
+      <span class="material-symbols-outlined text-white/70 text-[28px]">expand_more</span>
+      <h2 class="font-headline-lg text-headline-lg text-white">Zusätzliche Leistungen</h2>
+      <p class="font-body-md text-white/80 max-w-md">Winterdienst, Hochdruckreinigung und mehr: Wir übernehmen, was rund um Haus und Garten zusätzlich anfällt.</p>
+      <a href="zusaetzliche-leistungen.html" class="self-start bg-white text-on-surface px-6 py-2.5 rounded-full font-label-sm hover:scale-[1.02] transition-transform mt-1">ZUSÄTZLICHE LEISTUNGEN</a>
+    </div>
+    <div class="relative" style="clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%);">
+      <img src="assets/images/gartenbau-wegebau-photo.webp" alt="Wegebau und Aussenanlagen von Meyer Gartenglanz" class="absolute inset-0 w-full h-full object-cover">
       <div class="absolute inset-0 bg-black/10"></div>
     </div>
   </div>
