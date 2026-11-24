@@ -27,7 +27,16 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
     </a>
     <nav class="hidden md:flex items-center gap-gutter">
       <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-accent transition-colors" href="index.html">Home</a>
-      <a class="font-label-sm text-label-sm text-accent font-bold" href="gartengestaltung.html" aria-current="page">Gartengestaltung</a>
+      <div class="relative group">
+        <a class="font-label-sm text-label-sm text-accent font-bold" href="gartengestaltung.html" aria-current="page">Gartengestaltung</a>
+        <div class="absolute left-0 top-full pt-4 hidden group-hover:block group-focus-within:block">
+          <div class="min-w-[200px] bg-surface rounded-xl shadow-lg border border-outline-variant/30 py-2">
+            <a class="block px-5 py-2.5 font-label-sm text-on-surface-variant hover:text-accent hover:bg-surface-container-high transition-colors" href="gartenplanung.html">Gartenplanung</a>
+            <a class="block px-5 py-2.5 font-label-sm text-on-surface-variant hover:text-accent hover:bg-surface-container-high transition-colors" href="gartenbau.html">Gartenbau</a>
+            <a class="block px-5 py-2.5 font-label-sm text-on-surface-variant hover:text-accent hover:bg-surface-container-high transition-colors" href="gartenpflege.html">Gartenpflege</a>
+          </div>
+        </div>
+      </div>
       <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-accent transition-colors" href="ueber-uns.html">Über uns</a>
       <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-accent transition-colors" href="kontakt.html">Kontakt</a>
     </nav>
@@ -41,6 +50,9 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
   <nav id="mobile-menu" class="hidden md:hidden flex-col bg-surface border-t border-outline-variant/20 px-margin-mobile py-4 gap-4">
     <a class="font-label-sm text-label-sm text-on-surface-variant" href="index.html">Home</a>
     <a class="font-label-sm text-label-sm text-accent font-bold" href="gartengestaltung.html">Gartengestaltung</a>
+    <a class="pl-4 font-label-sm text-label-sm text-on-surface-variant" href="gartenplanung.html">Gartenplanung</a>
+    <a class="pl-4 font-label-sm text-label-sm text-on-surface-variant" href="gartenbau.html">Gartenbau</a>
+    <a class="pl-4 font-label-sm text-label-sm text-on-surface-variant" href="gartenpflege.html">Gartenpflege</a>
     <a class="font-label-sm text-label-sm text-on-surface-variant" href="ueber-uns.html">Über uns</a>
     <a class="font-label-sm text-label-sm text-on-surface-variant" href="kontakt.html">Kontakt</a>
   </nav>
