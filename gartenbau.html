@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gartenbau – Meyer Gartenglanz</title>
+<meta name="description" content="Terrassen, Wege, Mauern und Erdarbeiten: Gartenbau im Thurgau von Meyer Gartenglanz.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<style>
+  @layer base{html{overflow-y:scroll;scrollbar-gutter:stable;}html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}
+  ::-webkit-scrollbar{display:none;}
+</style>
+<script src="https://cdn.tailwindcss.com"></script>
+<script id="tailwind-config">
+tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surface-container-low":"#ffffff","surface-variant":"#e4e2e2","inverse-primary":"#a9cf78","on-error":"#ffffff","secondary":"#55624a","surface-container-lowest":"#ffffff","on-tertiary-container":"#d9edbe","error":"#ba1a1a","on-primary":"#ffffff","on-background":"#000000","on-tertiary":"#ffffff","surface-dim":"#ffffff","on-secondary":"#ffffff","error-container":"#ffdad6","primary":"#4f7a12","on-primary-container":"#c8e6a0","outline-variant":"#c2c9bb","tertiary-fixed":"#d9edbe","tertiary-fixed-dim":"#a9cf78","secondary-container":"#d7e8bb","outline":"#72796e","background":"#ffffff","tertiary":"#3c6b0f","secondary-fixed-dim":"#b3cf85","surface-container":"#ffffff","on-tertiary-fixed":"#0f1d02","surface-bright":"#ffffff","on-secondary-fixed-variant":"#3a4a28","on-primary-fixed-variant":"#2e4a0a","primary-container":"#2a4208","on-primary-fixed":"#0f1d02","surface-tint":"#3c5a12","secondary-fixed":"#d7e8bb","primary-fixed":"#c8e6a0","inverse-on-surface":"#f2f0f0","on-secondary-container":"#33421f","accent":"#000000","surface":"#ffffff","on-secondary-fixed":"#1a2410","on-tertiary-fixed-variant":"#2e4a0a","tertiary-container":"#5c8f1f","primary-fixed-dim":"#a9cf78","surface-container-highest":"#ffffff","on-surface":"#000000","surface-container-high":"#ffffff","on-surface-variant":"#000000","inverse-surface":"#303030"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"section-gap":"120px","unit":"8px","container-max":"1280px","margin-mobile":"16px","margin-desktop":"64px","gutter":"24px"},"fontFamily":{"headline-md":["Arial","Helvetica","sans-serif"],"headline-xl":["Arial","Helvetica","sans-serif"],"headline-lg":["Arial","Helvetica","sans-serif"],"headline-xl-mobile":["Arial","Helvetica","sans-serif"],"body-lg":["Arial","Helvetica","sans-serif"],"label-sm":["Arial","Helvetica","sans-serif"],"body-md":["Arial","Helvetica","sans-serif"]},"fontSize":{"headline-md":["24px",{"lineHeight":"1.4","fontWeight":"600"}],"headline-xl":["48px",{"lineHeight":"1.2","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"1.3","fontWeight":"600"}],"headline-xl-mobile":["32px",{"lineHeight":"1.2","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"1.6","fontWeight":"400"}],"label-sm":["14px",{"lineHeight":"1.2","letterSpacing":"0.05em","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"1.6","fontWeight":"400"}]}}}}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+<style>.material-symbols-outlined{visibility:hidden}html.icons-ready .material-symbols-outlined{visibility:visible}</style>
+<script>(function(){var d=document.documentElement,s=function(){d.classList.add('icons-ready')};try{document.fonts.load('24px "Material Symbols Outlined"','arrow_forward').then(s,s);}catch(e){s();}setTimeout(s,3000);})();</script>
+</head>
+<body class="bg-background font-body-md text-on-background">
+
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(122,14,26,0.08)]">
+  <div class="h-28 max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between">
+    <a href="index.html" class="flex items-center">
+      <img src="assets/images/logo.png" alt="Meyer Gartenglanz" class="h-24 w-auto">
+    </a>
+    <nav class="hidden md:flex items-center gap-gutter">
+      <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-accent transition-colors" href="index.html">Home</a>
+      <a class="font-label-sm text-label-sm text-accent font-bold" href="gartengestaltung.html" aria-current="page">Gartengestaltung</a>
+      <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-accent transition-colors" href="ueber-uns.html">Über uns</a>
+      <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-accent transition-colors" href="kontakt.html">Kontakt</a>
+    </nav>
+    <div class="flex items-center gap-4">
+      <a class="hidden lg:block bg-primary text-on-primary px-6 py-2 rounded-full font-label-sm hover:scale-[1.02] transition-transform" href="kontakt.html">Offerte anfragen</a>
+      <button class="md:hidden w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center" aria-label="Menü öffnen" id="menu-toggle">
+        <span class="material-symbols-outlined text-on-surface">menu</span>
+      </button>
+    </div>
+  </div>
+  <nav id="mobile-menu" class="hidden md:hidden flex-col bg-surface border-t border-outline-variant/20 px-margin-mobile py-4 gap-4">
+    <a class="font-label-sm text-label-sm text-on-surface-variant" href="index.html">Home</a>
+    <a class="font-label-sm text-label-sm text-accent font-bold" href="gartengestaltung.html">Gartengestaltung</a>
+    <a class="font-label-sm text-label-sm text-on-surface-variant" href="ueber-uns.html">Über uns</a>
+    <a class="font-label-sm text-label-sm text-on-surface-variant" href="kontakt.html">Kontakt</a>
+  </nav>
+</header>
+
+<main class="w-full pt-28">
+<div class="flex flex-col w-full">
+
+<!-- Unterseiten-Navigation -->
+<section class="w-full bg-surface pt-10 pb-8">
+  <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop flex flex-col items-center gap-4">
+    <a href="gartengestaltung.html" class="font-label-sm text-on-surface-variant hover:text-accent inline-flex items-center gap-1">Gartengestaltung</a>
+    <div class="flex flex-wrap items-center justify-center gap-3">
+      <a href="gartenplanung.html" class="border border-outline-variant text-on-surface-variant hover:border-primary hover:text-accent transition-colors px-6 py-2.5 rounded-full font-label-sm">Gartenplanung</a>
+      <a href="gartenbau.html" class="bg-primary text-on-primary hover:scale-[1.02] transition-transform px-6 py-2.5 rounded-full font-label-sm">Gartenbau</a>
+      <a href="gartenpflege.html" class="border border-outline-variant text-on-surface-variant hover:border-primary hover:text-accent transition-colors px-6 py-2.5 rounded-full font-label-sm">Gartenpflege</a>
+    </div>
+  </div>
+</section>
+
+<!-- Gartenbau: Split-Intro -->
+<section id="bau" class="relative w-full overflow-hidden bg-on-primary-fixed scroll-mt-28">
+  <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
+    <span class="font-headline-xl font-bold text-white/[0.06] text-[20vw] leading-none whitespace-nowrap">PRÄZISE</span>
+  </div>
+  <div class="relative grid grid-cols-1 lg:grid-cols-2 min-h-[460px]">
+    <div class="relative lg:order-1" style="clip-path: polygon(0 0, 92% 0, 100% 100%, 0 100%);">
+      <img src="assets/images/gartenbau-intro-photo.webp" alt="Baggerarbeiten bei einem Gartenbau-Projekt von Meyer Gartenglanz" class="absolute inset-0 w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black/10"></div>
+    </div>
+    <div class="relative z-10 lg:order-2 flex flex-col justify-center gap-4 px-margin-mobile lg:px-margin-desktop py-16 lg:py-20">
+      <span class="material-symbols-outlined text-white/70 text-[28px]">expand_more</span>
+      <h1 class="font-headline-lg text-headline-lg text-white">Gartenbau</h1>
+      <p class="font-body-md text-white/80 max-w-md">Kompetent und erfahren setzen wir Ihren Garten um – von den ersten Erdarbeiten bis zum letzten Grashalm, mit Schweizer Präzision und sichtbarem Resultat.</p>
+      <a href="#bau-details" class="self-start bg-white text-on-surface px-6 py-2.5 rounded-full font-label-sm hover:scale-[1.02] transition-transform mt-1">GARTENBAU</a>
+    </div>
+  </div>
+</section>
+
+<section id="bau-details" class="w-full bg-surface pt-16 lg:pt-20 pb-16 lg:pb-20 scroll-mt-28">
+  <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop flex flex-col items-center">
+    <div class="w-full flex flex-col gap-2 items-center text-center">
+      <h3 class="font-headline-md text-headline-md text-on-surface">Von der Planung zur Umsetzung</h3>
+      <p class="font-body-md text-lg text-on-surface-variant leading-snug max-w-xl">Ihr Garten, neu gebaut: Wir begleiten Ihr Projekt mit Schweizer Präzision und Referenzen im ganzen Thurgau.</p>
+    </div>
+
+        <!-- Bild-Galerie -->
+        <div class="w-full grid grid-cols-1 sm:grid-cols-3 gap-5 mt-8 text-left">
+          <div class="rounded-xl overflow-hidden shadow-lg bg-surface-container-low group">
+            <div class="overflow-hidden"><img src="assets/images/gartenbau-erdarbeiten-photo.webp" alt="Erdarbeiten und Aushub bei einem Gartenbau-Projekt von Meyer Gartenglanz" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"></div>
+            <div class="p-4"><span class="font-body-md font-semibold text-on-surface">Erdarbeiten &amp; Aushub</span></div>
+          </div>
+          <div class="rounded-xl overflow-hidden shadow-lg bg-surface-container-low group">
+            <div class="overflow-hidden"><img src="assets/images/gartenbau-wegebau-photo.webp" alt="Wegebau und Pflästerung bei einem Gartenbau-Projekt von Meyer Gartenglanz" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"></div>
+            <div class="p-4"><span class="font-body-md font-semibold text-on-surface">Wegebau &amp; Pflästerung</span></div>
+          </div>
+          <div class="rounded-xl overflow-hidden shadow-lg bg-surface-container-low group">
+            <div class="overflow-hidden"><img src="assets/images/gartenbau-fertigstellung-photo.webp" alt="Fertiggestellter Garten mit gepflegtem Rasen von Meyer Gartenglanz" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"></div>
+            <div class="p-4"><span class="font-body-md font-semibold text-on-surface">Fertigstellung &amp; Resultat</span></div>
+          </div>
+        </div>
+
+        <!-- Vorteile -->
+        <div class="w-full grid grid-cols-2 lg:grid-cols-4 gap-4 mt-10 text-left">
+          <div class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary text-[22px] flex-shrink-0">verified</span>
+            <span class="font-body-md text-sm text-on-surface">Festpreis-Offerte ohne versteckte Kosten</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary text-[22px] flex-shrink-0">workspace_premium</span>
+            <span class="font-body-md text-sm text-on-surface">Schweizer Qualität &amp; Materialien</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary text-[22px] flex-shrink-0">event_available</span>
+            <span class="font-body-md text-sm text-on-surface">Verbindliche Terminplanung</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary text-[22px] flex-shrink-0">groups</span>
+            <span class="font-body-md text-sm text-on-surface">Persönliche Betreuung vom Start bis zum Schluss</span>
+          </div>
+        </div>
+
+        <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-5 mt-8 text-left">
+          <div class="bg-surface border border-outline-variant/40 rounded-xl p-6">
+            <h3 class="font-body-md font-semibold text-on-surface text-lg mb-3">Aussenanlagen</h3>
+            <ul class="grid grid-cols-2 gap-x-4 gap-y-2">
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Terrassenbau</span></li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Wegebau</span></li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Trockenmauern</span></li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Sichtschutzbau</span></li>
+            </ul>
+          </div>
+          <div class="bg-surface border border-outline-variant/40 rounded-xl p-6">
+            <h3 class="font-body-md font-semibold text-on-surface text-lg mb-3">Wasser, Licht &amp; Rasen</h3>
+            <ul class="grid grid-cols-2 gap-x-4 gap-y-2">
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Teichbau</span></li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Bewässerung</span></li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Beleuchtung</span></li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Rasenneuanlage</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="w-full bg-secondary-container/40 rounded-xl p-8 lg:p-10 mt-8 flex flex-col items-center text-center gap-4">
+          <h3 class="font-headline-md text-headline-md text-on-surface">Bereit, Ihren Garten neu zu gestalten?</h3>
+          <p class="font-body-md text-on-surface-variant max-w-lg">Vereinbaren Sie eine kostenlose, unverbindliche Erstberatung – wir besprechen Ihr Projekt und erstellen Ihnen eine transparente Offerte.</p>
+          <a href="kontakt.html" class="bg-primary text-on-primary px-8 py-3.5 rounded-full font-label-sm hover:scale-[1.02] transition-transform inline-flex items-center gap-2">
+            Kostenlose Erstberatung anfragen
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+        </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="w-full bg-surface-container py-section-gap border-t border-outline-variant/20">
+  <div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter">
+    <div class="flex flex-col gap-4">
+      <div class="flex items-center gap-3">
+        <span class="material-symbols-outlined text-accent text-[28px]">nature</span>
+        <span class="font-headline-md text-headline-md text-accent">Meyer Gartenglanz</span>
+      </div>
+      <p class="font-body-md text-on-surface-variant max-w-xs">Traditionelle Gartenpflege und moderner Gartenbau im Thurgau. Wir schaffen Räume für Ihre Erholung.</p>
+    </div>
+    <div class="flex flex-col gap-4">
+      <h4 class="font-headline-md text-headline-md text-on-surface">Schnelllinks</h4>
+      <nav class="flex flex-col gap-2">
+        <a class="font-body-md text-on-surface-variant hover:text-accent" href="gartengestaltung.html">Gartengestaltung</a>
+        <a class="font-body-md text-on-surface-variant hover:text-accent" href="ueber-uns.html">Über uns</a>
+        <a class="font-body-md text-on-surface-variant hover:text-accent" href="kontakt.html">Kontakt aufnehmen</a>
+      </nav>
+    </div>
+    <div class="flex flex-col gap-4">
+      <h4 class="font-headline-md text-headline-md text-on-surface">Kontakt</h4>
+      <p class="font-body-md text-on-surface-variant">Walzmühlestrasse 34<br>8500 Frauenfeld</p>
+      <div class="flex items-center gap-2 text-accent"><span class="material-symbols-outlined">mail</span><span class="font-body-md">info@meyer-gartenglanz.ch</span></div>
+      <div class="flex items-center gap-2 text-accent"><span class="material-symbols-outlined">call</span><span class="font-body-md">079 292 21 21</span></div>
+    </div>
+  </div>
+  <div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop mt-12 pt-8 border-t border-outline-variant/30 flex flex-col md:flex-row items-center justify-between gap-4 text-center font-label-sm text-on-surface-variant opacity-60">
+    <span>© 2026 Meyer Gartenglanz. Alle Rechte vorbehalten.</span>
+    <div class="flex items-center gap-6">
+      <a href="impressum.html" class="hover:text-accent transition-colors">Impressum</a>
+      <a href="agb.html" class="hover:text-accent transition-colors">AGB</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('menu-toggle')?.addEventListener('click', function () {
+    var menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden');
+    menu.classList.toggle('flex');
+  });
+</script>
+</body>
+</html>

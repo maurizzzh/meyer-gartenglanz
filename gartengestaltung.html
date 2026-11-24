@@ -61,9 +61,9 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
       <img src="assets/images/gartengestaltung-illustration-v2.webp" alt="Meyer Gartenglanz Illustration: Team bei Gartenbau- und Pflegearbeiten mit Fahrzeug, Bagger und Werkzeug" class="w-full max-w-[680px] h-auto">
     </div>
     <div class="flex flex-wrap items-center justify-center gap-3">
-      <a href="#planung" class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-label-sm hover:scale-[1.02] transition-transform">Gartenplanung</a>
-      <a href="#bau" class="border border-outline-variant text-on-surface-variant hover:border-primary hover:text-accent px-6 py-2.5 rounded-full font-label-sm transition-colors">Gartenbau</a>
-      <a href="#pflege" class="border border-outline-variant text-on-surface-variant hover:border-primary hover:text-accent px-6 py-2.5 rounded-full font-label-sm transition-colors">Gartenpflege</a>
+      <a href="gartenplanung.html" class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-label-sm hover:scale-[1.02] transition-transform">Gartenplanung</a>
+      <a href="gartenbau.html" class="border border-outline-variant text-on-surface-variant hover:border-primary hover:text-accent px-6 py-2.5 rounded-full font-label-sm transition-colors">Gartenbau</a>
+      <a href="gartenpflege.html" class="border border-outline-variant text-on-surface-variant hover:border-primary hover:text-accent px-6 py-2.5 rounded-full font-label-sm transition-colors">Gartenpflege</a>
     </div>
   </div>
 </section>
@@ -108,7 +108,7 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
 </section>
 
 <!-- Gartenplanung: Split-Intro -->
-<section id="planung" class="relative w-full overflow-hidden bg-on-primary-fixed scroll-mt-28">
+<section class="relative w-full overflow-hidden bg-on-primary-fixed scroll-mt-28">
   <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
     <span class="font-headline-xl font-bold text-white/[0.06] text-[20vw] leading-none whitespace-nowrap">DURCHDACHT</span>
   </div>
@@ -117,7 +117,7 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
       <span class="material-symbols-outlined text-white/70 text-[28px]">expand_more</span>
       <h2 class="font-headline-lg text-headline-lg text-white">Gartenplanung</h2>
       <p class="font-body-md text-white/80 max-w-md">Von der ersten Standortanalyse bis zum fertigen Gestaltungskonzept: Wir planen Ihren Garten durchdacht und auf Ihre Wünsche zugeschnitten.</p>
-      <a href="#planung-details" class="self-start bg-white text-on-surface px-6 py-2.5 rounded-full font-label-sm hover:scale-[1.02] transition-transform mt-1">GARTENPLANUNG</a>
+      <a href="gartenplanung.html" class="self-start bg-white text-on-surface px-6 py-2.5 rounded-full font-label-sm hover:scale-[1.02] transition-transform mt-1">GARTENPLANUNG</a>
     </div>
     <div class="relative" style="clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%);">
       <img src="assets/images/hero-home.jpg" alt="Gartenplan auf einer neu gestalteten Gartenanlage von Meyer Gartenglanz" class="absolute inset-0 w-full h-full object-cover">
@@ -126,73 +126,9 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
   </div>
 </section>
 
-<section id="planung-details" class="w-full bg-surface pt-16 lg:pt-20 pb-16 lg:pb-20 scroll-mt-28">
-  <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop flex flex-col items-center">
-    <div class="w-full flex flex-col gap-2 items-center text-center">
-      <h3 class="font-headline-md text-headline-md text-on-surface">Jedes Projekt beginnt mit einer durchdachten Planung</h3>
-      <p class="font-body-md text-lg text-on-surface-variant leading-snug max-w-xl">Wir analysieren Ihren Standort, entwickeln ein passendes Gestaltungskonzept und stimmen Pflanzen- und Materialwahl auf Ihre Wünsche ab.</p>
-    </div>
-
-        <!-- Verlauf / Ablauf als verbundene Zeitachse -->
-        <div class="w-full mt-10 pt-8 border-t border-outline-variant/30 text-left">
-          <div class="text-center mb-10">
-            <span class="font-label-sm text-accent uppercase tracking-widest">So läuft es ab</span>
-            <h3 class="font-headline-md text-headline-md text-on-surface mt-2">Ihr Weg zum fertigen Gartenkonzept</h3>
-            <p class="font-body-md text-on-surface-variant mt-2 max-w-xl mx-auto">Von der ersten Kontaktaufnahme bis zur Umsetzung begleiten wir Sie Schritt für Schritt – transparent, verbindlich und immer mit Ihnen im Austausch.</p>
-          </div>
-          <div class="relative max-w-2xl mx-auto pl-16 lg:pl-20">
-            <div class="absolute left-6 lg:left-8 top-2 bottom-2 w-0.5 bg-gradient-to-b from-primary via-primary/50 to-primary/10"></div>
-            <div class="flex flex-col gap-8">
-              <div class="relative">
-                <span class="absolute -left-16 lg:-left-20 top-0 w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md ring-4 ring-surface"><span class="material-symbols-outlined text-[22px] lg:text-[26px]">forum</span></span>
-                <div class="bg-surface border border-outline-variant/40 rounded-xl p-5 hover:border-primary/50 hover:shadow-md transition-all">
-                  <h4 class="font-body-md font-semibold text-on-surface text-lg">Kontaktaufnahme &amp; Wünsche</h4>
-                  <p class="font-body-md text-sm text-on-surface-variant mt-1">Sie schildern uns Ihre Ideen, Ihren Platz und was Ihnen im Garten wichtig ist.</p>
-                </div>
-              </div>
-              <div class="relative">
-                <span class="absolute -left-16 lg:-left-20 top-0 w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md ring-4 ring-surface"><span class="material-symbols-outlined text-[22px] lg:text-[26px]">location_on</span></span>
-                <div class="bg-surface border border-outline-variant/40 rounded-xl p-5 hover:border-primary/50 hover:shadow-md transition-all">
-                  <h4 class="font-body-md font-semibold text-on-surface text-lg">Standortanalyse vor Ort</h4>
-                  <p class="font-body-md text-sm text-on-surface-variant mt-1">Wir prüfen Boden, Lichtverhältnisse und Gegebenheiten direkt bei Ihnen im Garten.</p>
-                </div>
-              </div>
-              <div class="relative">
-                <span class="absolute -left-16 lg:-left-20 top-0 w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md ring-4 ring-surface"><span class="material-symbols-outlined text-[22px] lg:text-[26px]">design_services</span></span>
-                <div class="bg-surface border border-outline-variant/40 rounded-xl p-5 hover:border-primary/50 hover:shadow-md transition-all">
-                  <h4 class="font-body-md font-semibold text-on-surface text-lg">Gestaltungskonzept &amp; Bepflanzungsplan</h4>
-                  <p class="font-body-md text-sm text-on-surface-variant mt-1">Sie erhalten einen Entwurf mit stimmigem Konzept für Form, Material und passende Pflanzenauswahl.</p>
-                </div>
-              </div>
-              <div class="relative">
-                <span class="absolute -left-16 lg:-left-20 top-0 w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md ring-4 ring-surface"><span class="material-symbols-outlined text-[22px] lg:text-[26px]">eco</span></span>
-                <div class="bg-surface border border-outline-variant/40 rounded-xl p-5 hover:border-primary/50 hover:shadow-md transition-all">
-                  <h4 class="font-body-md font-semibold text-on-surface text-lg">Material- &amp; Pflanzenberatung</h4>
-                  <p class="font-body-md text-sm text-on-surface-variant mt-1">Gemeinsam stimmen wir Materialien, Pflanzen und letzte Details auf Ihre Wünsche ab.</p>
-                </div>
-              </div>
-              <div class="relative">
-                <span class="absolute -left-16 lg:-left-20 top-0 w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md ring-4 ring-surface"><span class="material-symbols-outlined text-[22px] lg:text-[26px]">request_quote</span></span>
-                <div class="bg-surface border border-outline-variant/40 rounded-xl p-5 hover:border-primary/50 hover:shadow-md transition-all">
-                  <h4 class="font-body-md font-semibold text-on-surface text-lg">Kostenschätzung &amp; Offerte</h4>
-                  <p class="font-body-md text-sm text-on-surface-variant mt-1">Sie erhalten eine transparente Kostenübersicht und einen verbindlichen Starttermin.</p>
-                </div>
-              </div>
-              <div class="relative">
-                <span class="absolute -left-16 lg:-left-20 top-0 w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md ring-4 ring-surface"><span class="material-symbols-outlined text-[22px] lg:text-[26px]">handshake</span></span>
-                <div class="bg-surface border border-outline-variant/40 rounded-xl p-5 hover:border-primary/50 hover:shadow-md transition-all">
-                  <h4 class="font-body-md font-semibold text-on-surface text-lg">Persönliche Beratung &amp; Umsetzung</h4>
-                  <p class="font-body-md text-sm text-on-surface-variant mt-1">Wir begleiten Sie persönlich von der Idee bis zur sorgfältigen Umsetzung durch unser Team.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-  </div>
-</section>
 
 <!-- Gartenbau: Split-Intro -->
-<section id="bau" class="relative w-full overflow-hidden bg-on-primary-fixed scroll-mt-28">
+<section class="relative w-full overflow-hidden bg-on-primary-fixed scroll-mt-28">
   <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
     <span class="font-headline-xl font-bold text-white/[0.06] text-[20vw] leading-none whitespace-nowrap">PRÄZISE</span>
   </div>
@@ -205,88 +141,14 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
       <span class="material-symbols-outlined text-white/70 text-[28px]">expand_more</span>
       <h2 class="font-headline-lg text-headline-lg text-white">Gartenbau</h2>
       <p class="font-body-md text-white/80 max-w-md">Kompetent und erfahren setzen wir Ihren Garten um – von den ersten Erdarbeiten bis zum letzten Grashalm, mit Schweizer Präzision und sichtbarem Resultat.</p>
-      <a href="#bau-details" class="self-start bg-white text-on-surface px-6 py-2.5 rounded-full font-label-sm hover:scale-[1.02] transition-transform mt-1">GARTENBAU</a>
+      <a href="gartenbau.html" class="self-start bg-white text-on-surface px-6 py-2.5 rounded-full font-label-sm hover:scale-[1.02] transition-transform mt-1">GARTENBAU</a>
     </div>
   </div>
 </section>
 
-<section id="bau-details" class="w-full bg-surface pt-16 lg:pt-20 pb-16 lg:pb-20 scroll-mt-28">
-  <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop flex flex-col items-center">
-    <div class="w-full flex flex-col gap-2 items-center text-center">
-      <h3 class="font-headline-md text-headline-md text-on-surface">Von der Planung zur Umsetzung</h3>
-      <p class="font-body-md text-lg text-on-surface-variant leading-snug max-w-xl">Ihr Garten, neu gebaut: Wir begleiten Ihr Projekt mit Schweizer Präzision und Referenzen im ganzen Thurgau.</p>
-    </div>
-
-        <!-- Bild-Galerie -->
-        <div class="w-full grid grid-cols-1 sm:grid-cols-3 gap-5 mt-8 text-left">
-          <div class="rounded-xl overflow-hidden shadow-lg bg-surface-container-low group">
-            <div class="overflow-hidden"><img src="assets/images/gartenbau-erdarbeiten-photo.webp" alt="Erdarbeiten und Aushub bei einem Gartenbau-Projekt von Meyer Gartenglanz" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"></div>
-            <div class="p-4"><span class="font-body-md font-semibold text-on-surface">Erdarbeiten &amp; Aushub</span></div>
-          </div>
-          <div class="rounded-xl overflow-hidden shadow-lg bg-surface-container-low group">
-            <div class="overflow-hidden"><img src="assets/images/gartenbau-wegebau-photo.webp" alt="Wegebau und Pflästerung bei einem Gartenbau-Projekt von Meyer Gartenglanz" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"></div>
-            <div class="p-4"><span class="font-body-md font-semibold text-on-surface">Wegebau &amp; Pflästerung</span></div>
-          </div>
-          <div class="rounded-xl overflow-hidden shadow-lg bg-surface-container-low group">
-            <div class="overflow-hidden"><img src="assets/images/gartenbau-fertigstellung-photo.webp" alt="Fertiggestellter Garten mit gepflegtem Rasen von Meyer Gartenglanz" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"></div>
-            <div class="p-4"><span class="font-body-md font-semibold text-on-surface">Fertigstellung &amp; Resultat</span></div>
-          </div>
-        </div>
-
-        <!-- Vorteile -->
-        <div class="w-full grid grid-cols-2 lg:grid-cols-4 gap-4 mt-10 text-left">
-          <div class="flex items-start gap-3">
-            <span class="material-symbols-outlined text-primary text-[22px] flex-shrink-0">verified</span>
-            <span class="font-body-md text-sm text-on-surface">Festpreis-Offerte ohne versteckte Kosten</span>
-          </div>
-          <div class="flex items-start gap-3">
-            <span class="material-symbols-outlined text-primary text-[22px] flex-shrink-0">workspace_premium</span>
-            <span class="font-body-md text-sm text-on-surface">Schweizer Qualität &amp; Materialien</span>
-          </div>
-          <div class="flex items-start gap-3">
-            <span class="material-symbols-outlined text-primary text-[22px] flex-shrink-0">event_available</span>
-            <span class="font-body-md text-sm text-on-surface">Verbindliche Terminplanung</span>
-          </div>
-          <div class="flex items-start gap-3">
-            <span class="material-symbols-outlined text-primary text-[22px] flex-shrink-0">groups</span>
-            <span class="font-body-md text-sm text-on-surface">Persönliche Betreuung vom Start bis zum Schluss</span>
-          </div>
-        </div>
-
-        <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-5 mt-8 text-left">
-          <div class="bg-surface border border-outline-variant/40 rounded-xl p-6">
-            <h3 class="font-body-md font-semibold text-on-surface text-lg mb-3">Aussenanlagen</h3>
-            <ul class="grid grid-cols-2 gap-x-4 gap-y-2">
-              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Terrassenbau</span></li>
-              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Wegebau</span></li>
-              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Trockenmauern</span></li>
-              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Sichtschutzbau</span></li>
-            </ul>
-          </div>
-          <div class="bg-surface border border-outline-variant/40 rounded-xl p-6">
-            <h3 class="font-body-md font-semibold text-on-surface text-lg mb-3">Wasser, Licht &amp; Rasen</h3>
-            <ul class="grid grid-cols-2 gap-x-4 gap-y-2">
-              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Teichbau</span></li>
-              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Bewässerung</span></li>
-              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Beleuchtung</span></li>
-              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span><span class="font-body-md text-base text-on-surface">Rasenneuanlage</span></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="w-full bg-secondary-container/40 rounded-xl p-8 lg:p-10 mt-8 flex flex-col items-center text-center gap-4">
-          <h3 class="font-headline-md text-headline-md text-on-surface">Bereit, Ihren Garten neu zu gestalten?</h3>
-          <p class="font-body-md text-on-surface-variant max-w-lg">Vereinbaren Sie eine kostenlose, unverbindliche Erstberatung – wir besprechen Ihr Projekt und erstellen Ihnen eine transparente Offerte.</p>
-          <a href="kontakt.html" class="bg-primary text-on-primary px-8 py-3.5 rounded-full font-label-sm hover:scale-[1.02] transition-transform inline-flex items-center gap-2">
-            Kostenlose Erstberatung anfragen
-            <span class="material-symbols-outlined">arrow_forward</span>
-          </a>
-        </div>
-  </div>
-</section>
 
 <!-- Gartenpflege: Split-Intro -->
-<section id="pflege" class="relative w-full overflow-hidden bg-on-primary-fixed scroll-mt-28">
+<section class="relative w-full overflow-hidden bg-on-primary-fixed scroll-mt-28">
   <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
     <span class="font-headline-xl font-bold text-white/[0.06] text-[20vw] leading-none whitespace-nowrap">GEPFLEGT</span>
   </div>
@@ -295,7 +157,7 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
       <span class="material-symbols-outlined text-white/70 text-[28px]">expand_more</span>
       <h2 class="font-headline-lg text-headline-lg text-white">Gartenpflege</h2>
       <p class="font-body-md text-white/80 max-w-md">Für einen Garten, der sich von selbst um Sie kümmert: Wir übernehmen die wiederkehrende Pflege zuverlässig nach festem Rhythmus.</p>
-      <a href="#pflege-details" class="self-start bg-white text-on-surface px-6 py-2.5 rounded-full font-label-sm hover:scale-[1.02] transition-transform mt-1">GARTENPFLEGE</a>
+      <a href="gartenpflege.html" class="self-start bg-white text-on-surface px-6 py-2.5 rounded-full font-label-sm hover:scale-[1.02] transition-transform mt-1">GARTENPFLEGE</a>
     </div>
     <div class="relative" style="clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%);">
       <img src="assets/images/gartenpflege-intro-photo.webp" alt="Rasenpflege durch Meyer Gartenglanz" class="absolute inset-0 w-full h-full object-cover">
@@ -304,72 +166,6 @@ tailwind.config={theme:{extend:{"colors":{"on-error-container":"#93000a","surfac
   </div>
 </section>
 
-<section id="pflege-details" class="w-full bg-surface pt-16 lg:pt-20 pb-16 lg:pb-20 scroll-mt-28">
-  <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop flex flex-col items-center">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full text-left">
-          <div class="bg-surface border border-outline-variant/40 rounded-xl p-5 flex flex-col gap-2 hover:border-primary/50 hover:shadow-md transition-all">
-            <span class="w-10 h-10 rounded-full bg-secondary-container/60 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span></span>
-            <span class="font-body-md font-semibold text-on-surface">Rasenpflege</span>
-            <span class="font-body-md text-sm text-on-surface-variant">Regelmässiger Schnitt für einen gepflegten Rasen.</span>
-          </div>
-          <div class="bg-surface border border-outline-variant/40 rounded-xl p-5 flex flex-col gap-2 hover:border-primary/50 hover:shadow-md transition-all">
-            <span class="w-10 h-10 rounded-full bg-secondary-container/60 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span></span>
-            <span class="font-body-md font-semibold text-on-surface">Heckenschnitt</span>
-            <span class="font-body-md text-sm text-on-surface-variant">Formschnitt nach Ihren Wünschen, termingerecht.</span>
-          </div>
-          <div class="bg-surface border border-outline-variant/40 rounded-xl p-5 flex flex-col gap-2 hover:border-primary/50 hover:shadow-md transition-all">
-            <span class="w-10 h-10 rounded-full bg-secondary-container/60 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span></span>
-            <span class="font-body-md font-semibold text-on-surface">Baumschnitt</span>
-            <span class="font-body-md text-sm text-on-surface-variant">Fachgerechter Rückschnitt für gesundes Wachstum.</span>
-          </div>
-          <div class="bg-surface border border-outline-variant/40 rounded-xl p-5 flex flex-col gap-2 hover:border-primary/50 hover:shadow-md transition-all">
-            <span class="w-10 h-10 rounded-full bg-secondary-container/60 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span></span>
-            <span class="font-body-md font-semibold text-on-surface">Unkrautbekämpfung</span>
-            <span class="font-body-md text-sm text-on-surface-variant">Zuverlässige Pflege ohne lästiges Unkraut.</span>
-          </div>
-          <div class="bg-surface border border-outline-variant/40 rounded-xl p-5 flex flex-col gap-2 hover:border-primary/50 hover:shadow-md transition-all">
-            <span class="w-10 h-10 rounded-full bg-secondary-container/60 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span></span>
-            <span class="font-body-md font-semibold text-on-surface">Bewässerung warten</span>
-            <span class="font-body-md text-sm text-on-surface-variant">Kontrolle und Wartung Ihrer Bewässerungsanlage.</span>
-          </div>
-          <div class="bg-surface border border-outline-variant/40 rounded-xl p-5 flex flex-col gap-2 hover:border-primary/50 hover:shadow-md transition-all">
-            <span class="w-10 h-10 rounded-full bg-secondary-container/60 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span></span>
-            <span class="font-body-md font-semibold text-on-surface">Laubentsorgung</span>
-            <span class="font-body-md text-sm text-on-surface-variant">Saubere Entsorgung im Herbst.</span>
-          </div>
-          <div class="bg-surface border border-outline-variant/40 rounded-xl p-5 flex flex-col gap-2 hover:border-primary/50 hover:shadow-md transition-all sm:col-span-2 lg:col-span-1">
-            <span class="w-10 h-10 rounded-full bg-secondary-container/60 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[20px]">task_alt</span></span>
-            <span class="font-body-md font-semibold text-on-surface">Frühjahrsputz</span>
-            <span class="font-body-md text-sm text-on-surface-variant">Ihr Garten startklar in die neue Saison.</span>
-          </div>
-        </div>
-
-        <!-- Unterhaltsabo -->
-        <div class="w-full max-w-4xl mt-14 lg:mt-20 pt-10 border-t border-outline-variant/30">
-          <div class="bg-secondary-container/40 rounded-xl p-8 lg:p-12 flex flex-col items-center text-center gap-5">
-            <span class="font-label-sm text-accent uppercase tracking-widest">Unser Unterhaltsabo</span>
-            <h3 class="font-headline-md text-headline-md text-on-surface">Gartenpflege im Abo – bequem und planbar</h3>
-            <p class="font-body-md text-on-surface-variant max-w-xl">Statt jeden Pflegeschritt einzeln zu organisieren, übernehmen wir Ihren Garten im festen Rhythmus. Sie legen gemeinsam mit uns fest, wie oft wir vorbeikommen – wir kümmern uns um den Rest.</p>
-            <ul class="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-2 text-left w-full max-w-2xl mt-2">
-              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">eco</span><span class="font-body-md text-sm text-on-surface">Rasenschnitt</span></li>
-              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">eco</span><span class="font-body-md text-sm text-on-surface">Heckenschnitt</span></li>
-              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">eco</span><span class="font-body-md text-sm text-on-surface">Unkrautentfernung</span></li>
-              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">eco</span><span class="font-body-md text-sm text-on-surface">Neupflanzungen</span></li>
-              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">eco</span><span class="font-body-md text-sm text-on-surface">Baum- &amp; Strauchschnitt</span></li>
-              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">eco</span><span class="font-body-md text-sm text-on-surface">Bewässerungscheck</span></li>
-              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">eco</span><span class="font-body-md text-sm text-on-surface">Düngung</span></li>
-              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">eco</span><span class="font-body-md text-sm text-on-surface">Laub- &amp; Grünschnittentsorgung</span></li>
-              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">eco</span><span class="font-body-md text-sm text-on-surface">Winterschutz</span></li>
-            </ul>
-            <p class="font-body-md text-on-surface-variant max-w-xl mt-2">So bleibt Ihr Garten das ganze Jahr über gepflegt – ohne dass Sie selbst daran denken müssen. Der Umfang und die Häufigkeit des Abos stimmen wir ganz auf Ihren Garten ab.</p>
-            <a href="kontakt.html" class="bg-primary text-on-primary px-8 py-3.5 rounded-full font-label-sm hover:scale-[1.02] transition-transform inline-flex items-center gap-2 mt-2">
-              Unterhaltsabo anfragen
-              <span class="material-symbols-outlined">arrow_forward</span>
-            </a>
-          </div>
-        </div>
-  </div>
-</section>
 
 <!-- Projekt-Galerie -->
 <section class="w-full bg-surface pb-section-gap">
