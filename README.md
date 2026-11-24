@@ -6,7 +6,6 @@ Statische Website für Meyer Gartenglanz (Gartengestaltung, Gartenbau & Gartenpf
 
 - `index.html` – Startseite
 - `leistungen.html` – Leistungen
-- `projekte.html` – Referenzprojekte
 - `kontakt.html` – Kontakt
 - `assets/favicon.svg` – Favicon
 
